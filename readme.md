@@ -4,6 +4,12 @@
 
 SilverChat is envisioned as a premier online platform dedicated to fostering companionship and connection amongst individuals aged 60 and over. In a digital landscape often focused on romance, SilverChat carves a unique niche by prioritising friendship, shared interests, and mutual support. The platform will provide an intuitive, accessible, and exceptionally secure environment where members can "chat like in the good old days" – connecting effortlessly through text, voice, and video via the streamlined 'SilverChat Agent'. Simplicity, user-friendliness, and robust member protection are the cornerstones of the SilverChat philosophy.
 
+---
+
+![SilverChat Initial Concept](https://github.com/LouieMorais/SilverChat/blob/main/.project/concepts/SilverChat.png?raw=true)
+
+---
+
 ## 2. What Makes SilverChat Distinctive?
 
 - **Focus on Companionship:** SilverChat's primary mission is to facilitate meaningful friendships and social connections based on common interests and life experiences, offering a welcoming alternative to dating-centric platforms.
@@ -92,5 +98,3 @@ SilverChat aims for continuous evolution, focusing on:
 ## 10. Conclusion
 
 SilverChat presents a compelling vision for a companionship-focused, secure, and user-friendly platform for the 60+ demographic. This proposal outlines a focused Alpha phase to build the foundational MVP using Vanilla JS and rigorous TDD, directly addressing the core need while paving the way for the advanced safety and communication features highlighted in the visual concept. It represents a commercially viable product direction with significant potential.
-
-![SilverChat Initial Concept](https://github.com/LouieMorais/SilverChat/blob/main/.project/concepts/SilverChat.png?raw=true)
