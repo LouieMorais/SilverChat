@@ -12,3 +12,10 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
+
+# Intellectual Property
+.project/development/
+
+# Node
+./backend/node_modules/
+.env
