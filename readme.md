@@ -1,4 +1,4 @@
-# Project Proposal: SilverChat - Companionship Network for the 60+
+# Project Proposal: SilverChat - The 60+ Companionship Network
 
 
 

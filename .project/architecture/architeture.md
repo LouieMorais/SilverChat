@@ -1,4 +1,4 @@
-# Technical Architecture: SilverChat - Companionship Network for the 60+
+# Technical Architecture: SilverChat - The 60+ Companionship Network
 
 
 
