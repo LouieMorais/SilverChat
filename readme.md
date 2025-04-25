@@ -1,6 +1,10 @@
-# Project Proposal: SilverChat - The 60+ Companionship Network
+**SilverChat - The 60+ Companionship Network** - *Alpha 1 Release*
+
+# Project Scope
 
 
+
+[TOC] 
 
 ## 1. Introduction
 
@@ -127,8 +131,6 @@ SilverChat presents a compelling vision for a companionship-focused, secure, and
 
 
 ## 8. Supporting Documentation
-
-
 
 * [Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
 * [Relational Database Schema](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database.md)

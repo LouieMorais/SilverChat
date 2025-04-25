@@ -1,6 +1,10 @@
-# Technical Architecture: SilverChat - The 60+ Companionship Network
+**SilverChat - The 60+ Companionship Network** - *Alpha 1 Release*
+
+# Technical Architecture
 
 
+
+[TOC] 
 
 ## 1. Phase 1: Alpha Development (Initial MVP)
 
