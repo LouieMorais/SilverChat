@@ -1,5 +1,5 @@
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat - The 60+ Companionship network" /> 
-*Alpha 3 Release*
+*Alpha Release 3*
 
 
 
@@ -30,7 +30,7 @@
 
 ## 1. Member Messaging Tables
 
-**SilverChat - Messaging Feature Database Schema (Target: Release 3)**
+**SilverChat - Messaging Feature Database Schema (Target: Alpha Release 3)**
 
 This document outlines the proposed database schema for handling member-to-member and club conversations within SilverChat, using PostgreSQL.
 
@@ -158,7 +158,7 @@ CREATE TABLE club (
 -- =============================================================== --
 
 
--- START: Messaging Feature Tables (Target: Release 3)           --
+-- START: Messaging Feature Tables (Target: Alpha Release 3)           --
 
 -- Lookup Table for Messaging
 CREATE TABLE conversation_type (
@@ -218,7 +218,7 @@ CREATE INDEX idx_message_conversation_created_at ON message (conversation_id, cr
 *(DBML representation for visualization and design tools. `member` and `club` included for context only.)*
 
 ```dbml
-// SilverChat - Messaging Feature Schema (Target: Release 3)
+// SilverChat - Messaging Feature Schema (Target: Alpha Release 3)
 
 // ===============================================================
 // START: Prerequisite Tables (Defined in Main Schema)
@@ -268,7 +268,7 @@ Table club { // PREREQUISITE - DO NOT RE-CREATE
 // ===============================================================
 
 
-// START: Messaging Feature Tables (Target: Release 3)
+// START: Messaging Feature Tables (Target: Alpha Release 3)
 
 Table conversation_type {
   id SERIAL [pk]

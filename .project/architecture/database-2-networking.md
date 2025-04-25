@@ -1,5 +1,5 @@
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat - The 60+ Companionship network" /> 
-*Alpha 2 Release*
+*Alpha Release 2*
 
 
 
@@ -29,11 +29,11 @@
 
 
 ## 1. Member Networking Tables
-**SilverChat - Networking Feature Database Schema (Target: Release 2)**
+**SilverChat - Networking Feature Database Schema (Target: Alpha Release 2)**
 
 This schema defines the tables required for member-to-member connections and interest clubs, building upon the core member profile schema established in Alpha 1.
 
-![SilverChat Database Schema 2: Networking](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-db2-networking.png)
+![SilverChat Database Schema 2: Member Networking](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-db2-networking.png)
 
 [View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-2-Networking-680c18471ca52373f56aa57e)
 
@@ -126,7 +126,7 @@ The following SQL `CREATE TABLE` statements represent the database structure def
 ### 2.1. SQL Syntax
 
 ```sql
--- Illustrative SQL for Schema 2 (Alpha 2) - Actual implementation via Knex Migrations
+-- Illustrative SQL for Schema 2 (Alpha Release 2) - Actual implementation via Knex Migrations
 
 -- =============================================================== --
 -- START: Prerequisite Tables (Defined in Schema 1 - DO NOT RE-RUN) --
@@ -143,7 +143,7 @@ CREATE TABLE member (
 -- =============================================================== --
 
 
--- START: Networking Feature Tables (Target: Alpha 2)            --
+-- START: Networking Feature Tables (Target: Alpha Release 2)            --
 
 -- Lookup Tables for Networking
 CREATE TABLE friendship_status (
@@ -221,7 +221,7 @@ CREATE TABLE club_membership (
 ### 2.2. DBML Syntax
 
 ```dbml
-// SilverChat - Schema 2: Member Networking (Alpha 2)
+// SilverChat - Schema 2: Member Networking (Alpha Release 2)
 // DBML Schema Definition
 
 // ===============================================================
@@ -238,7 +238,7 @@ Table member { // PREREQUISITE - DO NOT RE-CREATE
 // ===============================================================
 
 
-// START: Networking Feature Tables (Target: Alpha 2)
+// START: Networking Feature Tables (Target: Alpha Release 2)
 
 // --- Lookup Tables ---
 
