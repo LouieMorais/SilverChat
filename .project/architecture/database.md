@@ -1,4 +1,4 @@
-# Database Schema Design
+# Relational Database Schema
 
 
 
