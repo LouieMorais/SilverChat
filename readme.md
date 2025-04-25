@@ -1,8 +1,9 @@
-<img src=".project\architecture\img\silverchat-long-logo.png" width="500" alt="SilverChat logo" /> 
-*Alpha 1 Release*
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat logo" /> 
+            *Alpha 1 Release*
 
 
-# Project Scope
+
+# Project Scope (README)
 
 
 
@@ -11,7 +12,7 @@
 
 
 
-- [Project Scope](#project-scope)
+- [Project Scope (README)](#project-scope-readme)
   - [1. Introduction](#1-introduction)
   - [2. What Makes SilverChat Distinctive?](#2-what-makes-silverchat-distinctive)
   - [3. Future Vision \& Enhancements](#3-future-vision--enhancements)
@@ -23,7 +24,7 @@
 
 
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
 
 
 
@@ -33,11 +34,11 @@ SilverChat is envisioned as a premier online platform dedicated to fostering com
 
 
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
 
 ![SilverChat Initial Concept](https://github.com/LouieMorais/SilverChat/blob/main/.project/concepts/SilverChat.png?raw=true)
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
 
 
 
@@ -50,8 +51,7 @@ SilverChat is envisioned as a premier online platform dedicated to fostering com
 
 
 
-
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
 
 
 
@@ -68,8 +68,7 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
-
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
 
 
 
@@ -107,8 +106,7 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
-
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
 
 
 
@@ -121,8 +119,7 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
-
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
 
 
 
@@ -136,8 +133,7 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
-
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
 
 
 
@@ -147,7 +143,7 @@ SilverChat presents a compelling vision for a companionship-focused, secure, and
 
 
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
 
 
 
@@ -156,3 +152,6 @@ SilverChat presents a compelling vision for a companionship-focused, secure, and
 * [THIS DOCUMENT: Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
 * [Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
 * [Relational Database Schema](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database.md)
+
+
+
