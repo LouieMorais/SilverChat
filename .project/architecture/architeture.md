@@ -14,6 +14,7 @@
   - [3. Development Methodology \& Team](#3-development-methodology--team)
   - [4. Structure](#4-structure)
   - [5. Potential Challenges \& Mitigation](#5-potential-challenges--mitigation)
+  - [6. Supporting Documentation](#6-supporting-documentation)
 
 
 
@@ -187,3 +188,16 @@ silverchat/
 - **Technical Complexity:** Implementing even basic real-time features requires careful planning. _Mitigation:_ Strict adherence to TDD, breaking down tasks, focusing on core MVP logic.
 - **Scope Management:** Balancing the ambitious vision with achievable Alpha goals. _Mitigation:_ Rigorous adherence to the defined Alpha scope, logging future ideas.
 - **TDD Implementation:** Ensuring effective TDD practice. _Mitigation:_ Consistent application of the Red-Green-Refactor cycle, starting with simple tests.
+
+
+
+
+---
+
+
+
+## 6. Supporting Documentation
+
+* [Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
+* [THIS DOCUMENT: Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
+* [Relational Database Schema](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database.md)

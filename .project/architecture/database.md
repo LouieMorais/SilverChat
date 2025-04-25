@@ -17,7 +17,8 @@
   - [4. SQL Representation \& Implementation Notes](#4-sql-representation--implementation-notes)
     - [4.1. SQL Syntax](#41-sql-syntax)
     - [4.2. DBML Syntax](#42-dbml-syntax)
-  - [5. Sources of Knowledge and Inspiration](#5-sources-of-knowledge-and-inspiration)
+  - [5. Supporting Documentation](#5-supporting-documentation)
+  - [6. Sources of Knowledge and Inspiration](#6-sources-of-knowledge-and-inspiration)
 
 
 
@@ -518,7 +519,19 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 
 
 
-## 5. Sources of Knowledge and Inspiration
+## 5. Supporting Documentation
+
+* [Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
+* [Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
+* [THIS DOCUMENT: Relational Database Schema](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database.md)
+
+
+
+---
+
+
+
+## 6. Sources of Knowledge and Inspiration
 
 
 

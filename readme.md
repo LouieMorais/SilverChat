@@ -151,5 +151,6 @@ SilverChat presents a compelling vision for a companionship-focused, secure, and
 
 ## 8. Supporting Documentation
 
+* [THIS DOCUMENT: Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
 * [Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
 * [Relational Database Schema](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database.md)
