@@ -1,8 +1,16 @@
+**SilverChat - The 60+ Companionship Network** - *Alpha 1 Release*
+
 # Relational Database Schema
 
 
 
-## 1. Lookup Tables
+[TOC] 
+
+## 1. Member-Centric Tables
+
+
+
+### 1.1. Lookup Tables
 
 
 
@@ -17,10 +25,10 @@
 
 **Table: `member_type`** (Internal Use)
 
-| Column Name | Data Type     | Constraints       | Description                                   | Example Values                |
-| :---------- | :------------ | :---------------- | :-------------------------------------------- | :---------------------------- |
-| `id`        | `SERIAL`      | `PRIMARY KEY`     | Auto-incrementing unique identifier for type. | 1, 2, 3                       |
-| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the member type (e.g., 'Standard').   | 'Standard', 'Former', 'Admin' |
+| Column Name | Data Type     | Constraints       | Description                                   | Example Values                                       |
+| :---------- | :------------ | :---------------- | :-------------------------------------------- | :--------------------------------------------------- |
+| `id`        | `SERIAL`      | `PRIMARY KEY`     | Auto-incrementing unique identifier for type. | 1, 2, 3                                              |
+| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the member type (e.g., 'Standard').   | 'Standard', 'Former', 'Admin', 'Family', 'Supporter' |
 
 
 
@@ -66,7 +74,7 @@
 
 
 
-## 2. Core Data Tables
+### 1.2. Core Data Tables
 
 
 
@@ -111,6 +119,41 @@
 | `postcode`          | `VARCHAR(10)` | `NOT NULL`                                                | Postcode (e.g., UK format).                                        |
 | `country_code`      | `VARCHAR(2)`  | `NOT NULL DEFAULT 'GB'`                                   | ISO 3166-1 alpha-2 country code.                                   |
 | `created_at`        | `TIMESTAMPTZ` | `NOT NULL DEFAULT NOW()`                                  | Timestamp of record creation.                                      |
+
+
+
+---
+
+
+
+## 2. Member-to-Members Tables
+
+
+
+### 2.1. Lookup Tables
+
+
+
+**Table: `friendship_status`**
+
+| Column Name | Data Type     | Constraints       | Description                                    | Example Values                                  |
+| :---------- | :------------ | :---------------- | :--------------------------------------------- | :---------------------------------------------- |
+| `id`        | `SERIAL`      | `PRIMARY KEY`     | Auto-incrementing unique identifier for title. | 1, 2, 3, 4, 5, 6, 7, 8, 9                       |
+| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the friendship status option.          | 'Connected', 'Blocked', 'Invited', 'Restrained' |
+
+
+
+### 2.2. Core Data Tables
+
+
+
+**Table: `member_network`**
+
+| Column Name            | Data Type | Constraints             | Description                                    | Example Values                                  |
+| :--------------------- | :-------- | :---------------------- | :--------------------------------------------- | :---------------------------------------------- |
+| `id`                   | `SERIAL`  | `PRIMARY KEY`           | Auto-incrementing unique identifier for title. | 1, 2, 3, 4, 5, 6, 7, 8, 9                       |
+| `member_id`            | `INTEGER` | `REFERENCES member(id)` | Foreign key to `member` table.                 |                                                 |
+| `friendship_status_id` | `INTEGER` | `UNIQUE NOT NULL`       | Name of the friendship status option.          | 'Connected', 'Blocked', 'Invited', 'Restrained' |
 
 
 
