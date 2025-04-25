@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat logo" />
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat - The 60+ Companionship network" />
 *Alpha 1 Release*
 
 
@@ -7,7 +7,7 @@
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
 
 
@@ -24,7 +24,7 @@
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
 
 
@@ -34,11 +34,11 @@ SilverChat is envisioned as a premier online platform dedicated to fostering com
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
 ![SilverChat Initial Concept](https://github.com/LouieMorais/SilverChat/blob/main/.project/concepts/SilverChat.png?raw=true)
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
 
 
@@ -51,7 +51,7 @@ SilverChat is envisioned as a premier online platform dedicated to fostering com
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
 
 
@@ -68,7 +68,7 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
 
 
@@ -106,7 +106,7 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
 
 
@@ -119,7 +119,7 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
 
 
@@ -133,7 +133,7 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
 
 
@@ -143,7 +143,7 @@ SilverChat presents a compelling vision for a companionship-focused, secure, and
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" />
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
 
 

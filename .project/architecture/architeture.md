@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat logo" /> 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat - The 60+ Companionship network" /> 
 *Alpha 1 Release*
 
 
@@ -7,7 +7,9 @@
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
+
+ 
 
 
 - [Technical Architecture](#technical-architecture)
@@ -21,7 +23,8 @@
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
+
 
 
 ## 1. Phase 1: Alpha Development (Initial MVP)
@@ -58,7 +61,8 @@
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
+
 
 
 ## 2. Technical Stack
@@ -73,7 +77,8 @@
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
+
 
 
 ## 3. Development Methodology & Team
@@ -84,7 +89,8 @@
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
+
 
 
 ## 4. Structure
@@ -155,7 +161,7 @@ silverchat/
     │   ├── css/    # CSS stylesheets
     │   │   └── main.css
     │   ├── images/    # Image assets
-    │   └── favicon.ico
+    │   └── favicon.ico 
     │
     ├── src/    # Frontend JavaScript source code
     │   ├── js/    # Main JavaScript files
@@ -171,13 +177,14 @@ silverchat/
         ├── unit/
         └── setup.js
         # Optional: package.json for frontend dev dependencies (linter, jest)
-        # Optional: jest.config.js for frontend tests
+        # Optional: jest.config.js for frontend tests 
 
 ```
 
 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
+
 
 
 ## 5. Potential Challenges & Mitigation
@@ -188,8 +195,8 @@ silverchat/
 
 
 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 ## 6. Supporting Documentation
