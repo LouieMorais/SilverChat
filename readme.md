@@ -6,6 +6,8 @@
 
 SilverChat is envisioned as a premier online platform dedicated to fostering companionship and connection amongst individuals aged 60 and over. In a digital landscape often focused on romance, SilverChat carves a unique niche by prioritising friendship, shared interests, and mutual support. The platform will provide an intuitive, accessible, and exceptionally secure environment where members can "chat like in the good old days" – connecting effortlessly through text, voice, and video via the streamlined 'SilverChat Agent'. Simplicity, user-friendliness, and robust member protection are the cornerstones of the SilverChat philosophy.
 
+
+
 ---
 
 ![SilverChat Initial Concept](https://github.com/LouieMorais/SilverChat/blob/main/.project/concepts/SilverChat.png?raw=true)
@@ -23,6 +25,11 @@ SilverChat is envisioned as a premier online platform dedicated to fostering com
 
 
 
+
+---
+
+
+
 ## 3. Future Vision & Enhancements
 
 SilverChat aims for continuous evolution, focusing on:
@@ -33,6 +40,11 @@ SilverChat aims for continuous evolution, focusing on:
 - **Enhanced Agent Activities:** Expanding the Agent to include shared activities like simple online games, collaborative media experiences (music, videos), fostering deeper engagement.
 - **Facilitating Offline Connections:** Introducing features to support the organisation of local meetups and group events, translating online connections into real-world socialisation.
 - **Strengthening Groups & Clubs:** Enhancing group functionality for virtual clubs (e.g., Book Clubs, Hobby Groups, Local Area Groups) with better organisational tools.
+
+
+
+
+---
 
 
 
@@ -70,12 +82,22 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
+
+---
+
+
+
 ## 5. UX/UI Design Principles
 
 - **Simplicity:** Clean layouts, clear language, intuitive navigation.
 - **Accessibility:** Adherence to basic WCAG guidelines (contrast, font size, keyboard navigation).
 - **Trustworthiness:** Professional appearance, clear safety communication.
 - **Privacy-Awareness:** Incorporating privacy considerations, such as the future goal of automatic video backgrounds.
+
+
+
+
+---
 
 
 
@@ -89,7 +111,24 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
+
+---
+
+
+
 ## 7. Conclusion
 
 SilverChat presents a compelling vision for a companionship-focused, secure, and user-friendly platform for the 60+ demographic. This proposal outlines a focused Alpha phase to build the foundational MVP using Vanilla JS and rigorous TDD, directly addressing the core need while paving the way for the advanced safety and communication features highlighted in the visual concept. It represents a commercially viable product direction with significant potential.
 
+
+
+---
+
+
+
+## 8. Supporting Documentation
+
+
+
+* [Technical Architecture][https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md]
+* [Database Schema Design][https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database.md]
