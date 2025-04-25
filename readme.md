@@ -1,10 +1,12 @@
-**SilverChat - The 60+ Companionship Network** - *Alpha 1 Release*
+<img src=".project\architecture\img\silverchat-long-logo.png" width="500" alt="SilverChat logo" /> 
+*Alpha 1 Release*
+
 
 # Project Scope
 
 
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 
