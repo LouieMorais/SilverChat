@@ -81,7 +81,7 @@
 | `middle_names`                    | `VARCHAR(100)` |                                                        | Member's middle name(s) (Optional).                          |
 | `last_name`                       | `VARCHAR(100)` | `NOT NULL`                                             | Member's last name(s).                                       |
 | `date_of_birth`                   | `DATE`         | `NOT NULL`                                             | Member's date of birth.                                      |
-| `bio`                             | `TEXT`         |                                                        | Short profile description (Optional).                        |
+| `bio`                             | `TEXT`         |                                                        | Short profile description (Optional). **Note: this field is likely to be moved to another table, as I consider this to be part of the data produced for the interest of other members. - Louie** |
 | `gender_id`                       | `INTEGER`      | `REFERENCES gender(id)`                                | Foreign key to `gender` table (Optional/Nullable).           |
 | `title_id`                        | `INTEGER`      | `REFERENCES title(id)`                                 | Foreign key to `title` table (Optional/Nullable).            |
 | `marital_status_id`               | `INTEGER`      | `REFERENCES marital_status(id)`                        | Foreign key to `marital_status` table (Optional/Nullable).   |
