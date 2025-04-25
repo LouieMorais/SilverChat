@@ -13,8 +13,6 @@
     - [1.1. Lookup Tables](#11-lookup-tables)
     - [1.2. Core Data Tables](#12-core-data-tables)
   - [2. Member-to-Members Tables](#2-member-to-members-tables)
-    - [2.1. Lookup Tables](#21-lookup-tables)
-    - [2.2. Core Data Tables](#22-core-data-tables)
   - [3. SQL Statements](#3-sql-statements)
   - [4. Evolution](#4-evolution)
 
@@ -148,7 +146,13 @@
 
 
 
-### 2.1. Lookup Tables
+**Table: `member_connection`**
+
+| Column Name            | Data Type | Constraints             | Description                                                  | Example Values                                  |
+| :--------------------- | :-------- | :---------------------- | :----------------------------------------------------------- | :---------------------------------------------- |
+| `id`                   | `SERIAL`  | `PRIMARY KEY`           | Auto-incrementing unique identifier for title.               | 1, 2, 3, 4, 5, 6, 7, 8, 9                       |
+| `member_id`            | `INTEGER` | `REFERENCES member(id)` | Foreign key to `member` table. This is refers to another member who is connected to queried member. | A member's connection                           |
+| `friendship_status_id` | `INTEGER` | `UNIQUE NOT NULL`       | Name of the friendship status option.                        | 'Invited', 'Connected', 'Blocked', 'Restrained' |
 
 
 
@@ -161,17 +165,29 @@
 
 
 
-### 2.2. Core Data Tables
+**Table: `group`**
+
+| Column Name           | Data Type      | Constraints                                       | Description                                                  | Example Values                |
+| :-------------------- | :------------- | :------------------------------------------------ | :----------------------------------------------------------- | :---------------------------- |
+| `id`                  | `SERIAL`       | `PRIMARY KEY`                                     | Auto-incrementing unique identifier for title.               | 1, 2, 3, 4, 5, 6, 7, 8, 9     |
+| `group_membership_id` | `INTEGER`      | `UNIQUE NOT NULL REFERENCES group_membership(id)` | Foreign key to `group_membership` table (One-to-many).       |                               |
+| `name`                | `VARCHAR(100)` | `UNIQUE NOT NULL`                                 | Name of the group.                                           |                               |
+| `description`         | `TEXT`         |                                                   | Description of group                                         |                               |
+| `rules`               | `TEXT`         |                                                   | Rules of the group                                           |                               |
+| `type`                | `VARCHAR(50)`  | `UNIQUE NOT NULL`                                 | Set the group as public (open for anyone to join), private (request to join) or hidden (invitation-only). | 'Public', 'Private', 'Hidden' |
+| `created_at`          | `TIMESTAMPTZ`  | `NOT NULL DEFAULT NOW()`                          | Timestamp of record creation.                                |                               |
 
 
 
-**Table: `member_network`**
+**Table: `group_membership`**
 
-| Column Name            | Data Type | Constraints             | Description                                    | Example Values                                  |
-| :--------------------- | :-------- | :---------------------- | :--------------------------------------------- | :---------------------------------------------- |
-| `id`                   | `SERIAL`  | `PRIMARY KEY`           | Auto-incrementing unique identifier for title. | 1, 2, 3, 4, 5, 6, 7, 8, 9                       |
-| `member_id`            | `INTEGER` | `REFERENCES member(id)` | Foreign key to `member` table.                 |                                                 |
-| `friendship_status_id` | `INTEGER` | `UNIQUE NOT NULL`       | Name of the friendship status option.          | 'Connected', 'Blocked', 'Invited', 'Restrained' |
+| Column Name | Data Type     | Constraints                             | Description                                        | Example Values                             |
+| :---------- | :------------ | :-------------------------------------- | :------------------------------------------------- | :----------------------------------------- |
+| `id`        | `SERIAL`      | `PRIMARY KEY`                           | Auto-incrementing unique identifier for title.     | 1, 2, 3, 4, 5, 6, 7, 8, 9                  |
+| `member_id` | `INTEGER`     | `UNIQUE NOT NULL REFERENCES member(id)` | Foreign key to `member` table (One-to-one).        |                                            |
+| `role`      | `VARCHAR(50)` | `UNIQUE NOT NULL`                       | Creators are set as the first member of the group. | 'Creator', 'Admin', 'Member'               |
+| `status`    | `VARCHAR(50)` | `UNIQUE NOT NULL`                       | Defines access status.                             | 'Invited', 'Active', 'Suspended', 'Banned' |
+| joined_at   | `TIMESTAMPTZ` | `NOT NULL DEFAULT NOW()`                | Timestamp of record creation.                      |                                            |
 
 
 
@@ -184,7 +200,7 @@
 
 
 ```sql
--- Lookup Tables
+-- 1. Member-Centric Lookup Tables
 
 CREATE TABLE gender (
     id SERIAL PRIMARY KEY,
@@ -216,7 +232,14 @@ CREATE TABLE member_type (
     name VARCHAR(50) UNIQUE NOT NULL
 );
 
--- Core Data Tables
+-- 2. Member-to-Members Lookup Tables
+
+CREATE TABLE friendship_status (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50) UNIQUE NOT NULL
+);
+
+-- 1.2. Core Data Tables
 
 CREATE TABLE member (
     id SERIAL PRIMARY KEY,
