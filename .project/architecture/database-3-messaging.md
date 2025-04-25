@@ -3,7 +3,7 @@
 
 
 
-# Relational Database Schema 3: Messaging
+# Relational Database Schema 3: Member Messaging
 
 
 
@@ -33,6 +33,10 @@
 **SilverChat - Messaging Feature Database Schema (Target: Release 3)**
 
 This document outlines the proposed database schema for handling member-to-member and club conversations within SilverChat, using PostgreSQL.
+
+![SilverChat Database Schema 3: Messaging](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-db3-messaging.png)
+
+[View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-3-Messaging-680c092a1ca52373f569e51f)
 
 
 
@@ -94,22 +98,75 @@ This document outlines the proposed database schema for handling member-to-membe
 These definitions assume integration into the existing PostgreSQL database used by SilverChat. Implementation should use Knex.js migrations.
 
 
-https://dbdiagram.io/d/SilverChat-DB-3-Messaging-680c092a1ca52373f569e51f
-
-
 
 ### 2.1. SQL Syntax
 
-*(Illustrative SQL - Actual implementation via Knex Migrations. Assumes `member` and `club` tables exist.)*
+*(Illustrative SQL - Actual implementation via Knex Migrations.)*
 
 ```sql
--- Lookup Table
-CREATE TABLE conversation_type (
+-- =============================================================== --
+-- START: Prerequisite Tables (Defined in Main Schema - DO NOT RE-RUN) --
+-- Included for context/validation only.                           --
+
+-- Prerequisite Lookup Tables (Assume these exist and are populated)
+-- CREATE TABLE gender ...;
+-- CREATE TABLE title ...;
+-- CREATE TABLE marital_status ...;
+-- CREATE TABLE member_status ...;
+-- CREATE TABLE verification_state ...;
+-- CREATE TABLE member_type ...;
+
+-- Prerequisite: member Table
+CREATE TABLE member (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(50) UNIQUE NOT NULL
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    first_name VARCHAR(100) NOT NULL,
+    middle_names VARCHAR(100),
+    last_name VARCHAR(100) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    bio TEXT,
+    gender_id INTEGER,
+    title_id INTEGER,
+    marital_status_id INTEGER,
+    preferred_pronoun VARCHAR(50),
+    preferred_title VARCHAR(50),
+    preferred_gender VARCHAR(50),
+    member_status_id INTEGER NOT NULL DEFAULT 1,
+    identity_verification_status_id INTEGER NOT NULL DEFAULT 1,
+    address_verification_status_id INTEGER NOT NULL DEFAULT 1,
+    member_type_id INTEGER NOT NULL DEFAULT 1,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    -- Assume FKs to lookup tables are defined here in the main schema
 );
 
--- Core Data Tables
+-- Prerequisite: club Table
+CREATE TABLE club (
+    id SERIAL PRIMARY KEY,
+    creator_id INTEGER NOT NULL, -- FK to member defined below
+    name VARCHAR(100) UNIQUE NOT NULL,
+    description TEXT,
+    rules TEXT,
+    type VARCHAR(50) NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+
+    -- Foreign Key Constraint (defined in main schema)
+    FOREIGN KEY (creator_id) REFERENCES member(id)
+);
+
+-- END: Prerequisite Tables                                        --
+-- =============================================================== --
+
+
+-- START: Messaging Feature Tables (Target: Release 3)           --
+
+-- Lookup Table for Messaging
+CREATE TABLE conversation_type (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50) UNIQUE NOT NULL -- e.g., 'direct', 'club'
+);
+
+-- Core Messaging Tables
 CREATE TABLE conversation (
     id SERIAL PRIMARY KEY,
     conversation_type_id INTEGER NOT NULL,
@@ -118,7 +175,7 @@ CREATE TABLE conversation (
 
     -- Foreign Key Constraints
     FOREIGN KEY (conversation_type_id) REFERENCES conversation_type(id),
-    FOREIGN KEY (club_id) REFERENCES club(id) -- Assumes club table exists. Consider ON DELETE SET NULL?
+    FOREIGN KEY (club_id) REFERENCES club(id) -- Refers to prerequisite club table
 );
 
 CREATE TABLE conversation_participant (
@@ -132,23 +189,25 @@ CREATE TABLE conversation_participant (
 
     -- Foreign Key Constraints
     FOREIGN KEY (conversation_id) REFERENCES conversation(id) ON DELETE CASCADE,
-    FOREIGN KEY (member_id) REFERENCES member(id) ON DELETE CASCADE -- Assumes member table exists
+    FOREIGN KEY (member_id) REFERENCES member(id) ON DELETE CASCADE -- Refers to prerequisite member table
 );
 
 CREATE TABLE message (
     id BIGSERIAL PRIMARY KEY,
     conversation_id INTEGER NOT NULL,
-    sender_id INTEGER NOT NULL, -- Consider implications if sender member is deleted
+    sender_id INTEGER NOT NULL,
     content TEXT NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
 
     -- Foreign Key Constraints
     FOREIGN KEY (conversation_id) REFERENCES conversation(id) ON DELETE CASCADE,
-    FOREIGN KEY (sender_id) REFERENCES member(id) -- Assumes member table exists. Default ON DELETE NO ACTION/RESTRICT is likely safest initially.
+    FOREIGN KEY (sender_id) REFERENCES member(id) -- Refers to prerequisite member table
 );
 
 -- Index for efficient message retrieval
 CREATE INDEX idx_message_conversation_created_at ON message (conversation_id, created_at DESC);
+
+-- END: Messaging Feature Tables                                   --
 
 ```
 
@@ -156,10 +215,60 @@ CREATE INDEX idx_message_conversation_created_at ON message (conversation_id, cr
 
 ### 2.2. DBML Syntax
 
-*(DBML representation for visualization and design tools.)*
+*(DBML representation for visualization and design tools. `member` and `club` included for context only.)*
 
 ```dbml
 // SilverChat - Messaging Feature Schema (Target: Release 3)
+
+// ===============================================================
+// START: Prerequisite Tables (Defined in Main Schema)
+// Included for context/validation only.
+
+// Prerequisite Lookup Tables (Assume these exist)
+// Table gender { ... }
+// Table title { ... }
+// Table marital_status { ... }
+// Table member_status { ... }
+// Table verification_state { ... }
+// Table member_type { ... }
+
+Table member { // PREREQUISITE - DO NOT RE-CREATE
+  id SERIAL [pk]
+  email VARCHAR(255) [unique, not null]
+  password_hash VARCHAR(255) [not null]
+  first_name VARCHAR(100) [not null]
+  middle_names VARCHAR(100)
+  last_name VARCHAR(100) [not null]
+  date_of_birth DATE [not null]
+  bio TEXT
+  gender_id INTEGER // [ref: > gender.id] Assumed defined in main schema
+  title_id INTEGER // [ref: > title.id] Assumed defined in main schema
+  marital_status_id INTEGER // [ref: > marital_status.id] Assumed defined in main schema
+  preferred_pronoun VARCHAR(50)
+  preferred_title VARCHAR(50)
+  preferred_gender VARCHAR(50)
+  member_status_id INTEGER [not null, default: 1] // [ref: > member_status.id] Assumed defined in main schema
+  identity_verification_status_id INTEGER [not null, default: 1] // [ref: > verification_state.id] Assumed defined in main schema
+  address_verification_status_id INTEGER [not null, default: 1] // [ref: > verification_state.id] Assumed defined in main schema
+  member_type_id INTEGER [not null, default: 1] // [ref: > member_type.id] Assumed defined in main schema
+  created_at TIMESTAMPTZ [not null, default: `NOW()`]
+}
+
+Table club { // PREREQUISITE - DO NOT RE-CREATE
+  id SERIAL [pk]
+  creator_id INTEGER [not null, ref: > member.id] // Assumed defined in main schema
+  name VARCHAR(100) [unique, not null]
+  description TEXT
+  rules TEXT
+  type VARCHAR(50) [not null]
+  created_at TIMESTAMPTZ [not null, default: `NOW()`]
+}
+
+// END: Prerequisite Tables
+// ===============================================================
+
+
+// START: Messaging Feature Tables (Target: Release 3)
 
 Table conversation_type {
   id SERIAL [pk]
@@ -169,7 +278,7 @@ Table conversation_type {
 Table conversation {
   id SERIAL [pk]
   conversation_type_id INTEGER [not null, ref: > conversation_type.id]
-  club_id INTEGER [ref: > club.id, note: 'Nullable, used for club chats only']
+  club_id INTEGER [ref: > club.id, note: 'Nullable, used for club chats only'] // Refers to prerequisite club table
   created_at TIMESTAMPTZ [not null, default: `NOW()`]
 }
 
@@ -196,15 +305,17 @@ Table message {
   }
 }
 
-// --- Relationships ---
+// --- Relationships (Explicit definitions for clarity/cascades) ---
 
-Ref conversation_club: conversation.club_id > club.id // Assumes club table exists
+// Ref conversation_club: conversation.club_id > club.id // Defined inline above
 
 Ref participant_conversation: conversation_participant.conversation_id > conversation.id [delete: cascade]
-Ref participant_member: conversation_participant.member_id > member.id [delete: cascade] // Assumes member table exists
+Ref participant_member: conversation_participant.member_id > member.id [delete: cascade] // Refers to prerequisite member table
 
 Ref message_conversation: message.conversation_id > conversation.id [delete: cascade]
-Ref message_sender: message.sender_id > member.id // Assumes member table exists. ON DELETE behavior needs consideration (default: NO ACTION)
+Ref message_sender: message.sender_id > member.id // Refers to prerequisite member table
+
+// END: Messaging Feature Tables
 
 ```
 
@@ -217,11 +328,11 @@ Ref message_sender: message.sender_id > member.id // Assumes member table exists
 
 ## 3. Supporting Documentation
 
-* [Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
-* [Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
-* [Relational Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
-* [Relational Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
-* [THIS DOCUMENT: Relational Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
+* [SilverChat Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
+* [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
+* [SilverChat Relational Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
+* [SilverChat Relational Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
+* [THIS DOCUMENT: SilverChat Relational Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
 
 
 
