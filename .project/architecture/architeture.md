@@ -4,7 +4,23 @@
 
 
 
-[TOC] 
+---
+
+
+
+- [Technical Architecture](#technical-architecture)
+  - [1. Phase 1: Alpha Development (Initial MVP)](#1-phase-1-alpha-development-initial-mvp)
+  - [2. Technical Stack](#2-technical-stack)
+  - [3. Development Methodology \& Team](#3-development-methodology--team)
+  - [4. Structure](#4-structure)
+  - [5. Potential Challenges \& Mitigation](#5-potential-challenges--mitigation)
+
+
+
+
+---
+
+
 
 ## 1. Phase 1: Alpha Development (Initial MVP)
 

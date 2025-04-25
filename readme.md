@@ -4,7 +4,26 @@
 
 
 
-[TOC] 
+---
+
+
+
+
+- [Project Scope](#project-scope)
+  - [1. Introduction](#1-introduction)
+  - [2. What Makes SilverChat Distinctive?](#2-what-makes-silverchat-distinctive)
+  - [3. Future Vision \& Enhancements](#3-future-vision--enhancements)
+  - [4. Phase 1: Alpha Development (Initial MVP)](#4-phase-1-alpha-development-initial-mvp)
+  - [5. UX/UI Design Principles](#5-uxui-design-principles)
+  - [6. Safety and Moderation (Alpha Implementation)](#6-safety-and-moderation-alpha-implementation)
+  - [7. Conclusion](#7-conclusion)
+  - [8. Supporting Documentation](#8-supporting-documentation)
+
+
+
+---
+
+
 
 ## 1. Introduction
 
