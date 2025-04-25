@@ -29,7 +29,7 @@
 
 
 
-![SilverChat - Relational Database Schema](W:\learning\SilverChat\.project\architecture\SilverChat - The 60+ Companionship Network - Alpha 1 Release.png)
+![SilverChat - Relational Database Schema](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-db-schema.png)
 
 [SilverChat - Relational Database Diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-The-60-Companionship-Network-Alpha-1-Release-680bcc1b1ca52373f5650e84)
 
@@ -544,8 +544,8 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 - [Social network schema design in DynamoDB - Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-schema-social-network.html)
 - [Building a Social Network: Part I | by Kenneth Reilly | ITNEXT](https://itnext.io/building-a-social-network-part-i-25856fc693e1)
 - [Database schema for Social Networking Platform - Surfside Media](https://www.surfsidemedia.in/post/database-schema-for-social-networking-platform)
-- [BOOYAH! Facebook database schema | Reverse engineering by Anatoly Lu… | Flickr](https://www.flickr.com/photos/ikhnaton2/533233247/):
+- [Facebook database schema | Reverse engineering by Anatoly Lu… | Flickr](https://www.flickr.com/photos/ikhnaton2/533233247/):
 
 
 
-![](W:\learning\SilverChat\.project\architecture\facebook-reverse-engineered.jpg)
+![BOOYAH! FaceBook laid bare](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/facebook-reverse-engineered.jpg)
