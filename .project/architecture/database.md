@@ -1,10 +1,13 @@
-**SilverChat - The 60+ Companionship Network** - *Alpha 1 Release*
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat logo" /> 
+*Alpha 1 Release*
+
+
 
 # Relational Database Schema
 
 
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 
@@ -22,7 +25,7 @@
 
 
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 
@@ -34,7 +37,7 @@
 
 [SilverChat - Relational Database Diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-The-60-Companionship-Network-Alpha-1-Release-680bcc1b1ca52373f5650e84)
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 
@@ -171,7 +174,7 @@
 
 
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 
@@ -218,7 +221,7 @@
 
 
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 
@@ -515,7 +518,7 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 
 
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 
@@ -527,7 +530,7 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 
 
 
----
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 
