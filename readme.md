@@ -130,5 +130,5 @@ SilverChat presents a compelling vision for a companionship-focused, secure, and
 
 
 
-* [Technical Architecture][https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md]
-* [Database Schema Design][https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database.md]
+* [Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
+* [Database Schema Design](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database.md)
