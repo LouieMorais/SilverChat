@@ -13,10 +13,10 @@
 
 - [Relational Database Schema](#relational-database-schema)
   - [1. Relational Database Overview](#1-relational-database-overview)
-  - [2. Member-Centric Tables](#2-member-centric-tables)
+  - [2. Account and Profile Tables](#2-account-and-profile-tables)
     - [2.1. Lookup Tables](#21-lookup-tables)
     - [2.2. Core Data Tables](#22-core-data-tables)
-  - [3. Connection \& Club Tables](#3-connection--club-tables)
+  - [3. Member Networking Tables](#3-member-networking-tables)
   - [4. SQL Representation \& Implementation Notes](#4-sql-representation--implementation-notes)
     - [4.1. SQL Syntax](#41-sql-syntax)
     - [4.2. DBML Syntax](#42-dbml-syntax)
@@ -41,7 +41,7 @@
 
 
 
-## 2. Member-Centric Tables
+## 2. Account and Profile Tables
 
 
 
@@ -178,7 +178,7 @@
 
 
 
-## 3. Connection & Club Tables
+## 3. Member Networking Tables
 
 **Table: `connection`** (Junction table for member-to-member connections)
 
