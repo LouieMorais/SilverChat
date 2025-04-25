@@ -6,39 +6,21 @@
 
 
 
-**Table: `gender`**
-
-| Column Name | Data Type   | Constraints       | Description                                     | Example Values                                             |
-| :---------- | :---------- | :---------------- | :---------------------------------------------- | :--------------------------------------------------------- |
-| `id`        | `SERIAL`    | `PRIMARY KEY`     | Auto-incrementing unique identifier for gender. | 1, 2, 3, 4, 5                                              |
-| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the gender option.                      | 'Woman', 'Man', 'Non-binary', 'Prefer not to say', 'Other' |
-
-
-
 **Table: `title`**
 
-| Column Name | Data Type   | Constraints       | Description                                   | Example Values                                           |
-| :---------- | :---------- | :---------------- | :-------------------------------------------- | :------------------------------------------------------- |
-| `id`        | `SERIAL`    | `PRIMARY KEY`     | Auto-incrementing unique identifier for title.| 1, 2, 3, 4, 5, 6, 7, 8, 9                                |
-| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the title option.                     | 'Mr', 'Mrs', 'Ms', 'Miss', 'Mx', 'Dr', 'Prof', 'Prefer not to say', 'Other' |
+| Column Name | Data Type     | Constraints       | Description                                    | Example Values                                               |
+| :---------- | :------------ | :---------------- | :--------------------------------------------- | :----------------------------------------------------------- |
+| `id`        | `SERIAL`      | `PRIMARY KEY`     | Auto-incrementing unique identifier for title. | 1, 2, 3, 4, 5, 6, 7, 8, 9                                    |
+| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the title option.                      | 'Mr', 'Mrs', 'Ms', 'Miss', 'Mx', 'Dr', 'Prof', 'Prefer not to say', 'Other' |
 
 
 
-**Table: `marital_status`**
+**Table: `member_type`** (Internal Use)
 
-| Column Name | Data Type   | Constraints       | Description                                          | Example Values                                                                 |
-| :---------- | :---------- | :---------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------- |
-| `id`        | `SERIAL`    | `PRIMARY KEY`     | Auto-incrementing unique identifier for marital status. | 1, 2, 3, 4, 5, 6                                                               |
-| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the marital status option.                   | 'Single', 'Married', 'Civil Partnership', 'Divorced', 'Widowed', 'Prefer not to say' |
-
-
-
-**Table: `member_status`** (Internal Use)
-
-| Column Name | Data Type   | Constraints       | Description                                        | Example Values                                                    |
-| :---------- | :---------- | :---------------- | :------------------------------------------------- | :---------------------------------------------------------------- |
-| `id`        | `SERIAL`    | `PRIMARY KEY`     | Auto-incrementing unique identifier for status.    | 1, 2, 3, 4, 5                                                     |
-| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the member account status (internal).      | 'Pending Verification', 'Active', 'Suspended', 'Under Investigation', 'Expelled' |
+| Column Name | Data Type     | Constraints       | Description                                   | Example Values                |
+| :---------- | :------------ | :---------------- | :-------------------------------------------- | :---------------------------- |
+| `id`        | `SERIAL`      | `PRIMARY KEY`     | Auto-incrementing unique identifier for type. | 1, 2, 3                       |
+| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the member type (e.g., 'Standard').   | 'Standard', 'Former', 'Admin' |
 
 
 
@@ -53,12 +35,30 @@
 
 
 
-**Table: `member_type`** (Internal Use)
+**Table: `member_status`** (Internal Use)
 
-| Column Name | Data Type   | Constraints       | Description                                     | Example Values                 |
-| :---------- | :---------- | :---------------- | :---------------------------------------------- | :----------------------------- |
-| `id`        | `SERIAL`    | `PRIMARY KEY`     | Auto-incrementing unique identifier for type.   | 1, 2, 3                        |
-| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the member type (e.g., 'Standard').     | 'Standard', 'Former', 'Admin' |
+| Column Name | Data Type     | Constraints       | Description                                     | Example Values                                               |
+| :---------- | :------------ | :---------------- | :---------------------------------------------- | :----------------------------------------------------------- |
+| `id`        | `SERIAL`      | `PRIMARY KEY`     | Auto-incrementing unique identifier for status. | 1, 2, 3, 4, 5                                                |
+| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the member account status (internal).   | 'Pending Verification', 'Active', 'Suspended', 'Under Investigation', 'Expelled' |
+
+
+
+**Table: `gender`**
+
+| Column Name | Data Type   | Constraints       | Description                                     | Example Values                                             |
+| :---------- | :---------- | :---------------- | :---------------------------------------------- | :--------------------------------------------------------- |
+| `id`        | `SERIAL`    | `PRIMARY KEY`     | Auto-incrementing unique identifier for gender. | 1, 2, 3, 4, 5                                              |
+| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the gender option.                      | 'Woman', 'Man', 'Non-binary', 'Prefer not to say', 'Other' |
+
+
+
+**Table: `marital_status`**
+
+| Column Name | Data Type   | Constraints       | Description                                          | Example Values                                                                 |
+| :---------- | :---------- | :---------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------- |
+| `id`        | `SERIAL`    | `PRIMARY KEY`     | Auto-incrementing unique identifier for marital status. | 1, 2, 3, 4, 5, 6                                                               |
+| `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the marital status option.                   | 'Single', 'Married', 'Civil Partnership', 'Divorced', 'Widowed', 'Prefer not to say' |
 
 
 
@@ -87,6 +87,7 @@
 | `marital_status_id`               | `INTEGER`      | `REFERENCES marital_status(id)`                        | Foreign key to `marital_status` table (Optional/Nullable).   |
 | `preferred_pronoun`               | `VARCHAR(50)`  |                                                        | Free-text preferred pronouns (Optional).                     |
 | `preferred_title`                 | `VARCHAR(50)`  |                                                        | Free-text preferred title (Optional, e.g., if title is 'Other'). |
+| `preferred_gender`                | `VARCHAR(50)`  |                                                        | Free-text preferred gender (Optional, e.g., if gender is 'Other'). |
 | `member_status_id`                | `INTEGER`      | `NOT NULL DEFAULT 1 REFERENCES member_status(id)`      | Foreign key to `member_status` table (Default: 'Pending Verification'). |
 | `identity_verification_status_id` | `INTEGER`      | `NOT NULL DEFAULT 1 REFERENCES verification_state(id)` | Foreign key to `verification_state` (Default: 'Not Started'). |
 | `address_verification_status_id`  | `INTEGER`      | `NOT NULL DEFAULT 1 REFERENCES verification_state(id)` | Foreign key to `verification_state` (Default: 'Not Started'). |
@@ -110,6 +111,8 @@
 | `postcode`          | `VARCHAR(10)` | `NOT NULL`                                                | Postcode (e.g., UK format).                                        |
 | `country_code`      | `VARCHAR(2)`  | `NOT NULL DEFAULT 'GB'`                                   | ISO 3166-1 alpha-2 country code.                                   |
 | `created_at`        | `TIMESTAMPTZ` | `NOT NULL DEFAULT NOW()`                                  | Timestamp of record creation.                                      |
+
+
 
 ---
 
