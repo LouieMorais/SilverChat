@@ -1,11 +1,13 @@
-**SilverChat - The 60+ Companionship Network** - *Alpha 1 Release*
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat logo" /> 
+            *Alpha 1 Release*
+
+
 
 # Technical Architecture
 
 
 
----
-
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 - [Technical Architecture](#technical-architecture)
@@ -19,8 +21,7 @@
 
 
 
----
-
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 ## 1. Phase 1: Alpha Development (Initial MVP)
@@ -57,8 +58,7 @@
 
 
 
----
-
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 ## 2. Technical Stack
@@ -73,8 +73,7 @@
 
 
 
----
-
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 ## 3. Development Methodology & Team
@@ -85,8 +84,7 @@
 
 
 
----
-
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 ## 4. Structure
@@ -179,8 +177,7 @@ silverchat/
 
 
 
----
-
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 ## 5. Potential Challenges & Mitigation
@@ -192,8 +189,7 @@ silverchat/
 
 
 
----
-
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" alt="SilverChat logo" /> 
 
 
 ## 6. Supporting Documentation
