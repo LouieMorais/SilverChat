@@ -19,8 +19,13 @@
   - [2. SQL Representation \& Implementation Notes](#2-sql-representation--implementation-notes)
     - [2.1. SQL Syntax](#21-sql-syntax)
     - [2.2. DBML Syntax](#22-dbml-syntax)
-  - [3. Supporting Documentation](#3-supporting-documentation)
-  - [4. Sources](#4-sources)
+  - [3. SilverChat Project Documentation](#3-silverchat-project-documentation)
+  - [4. External Sources](#4-external-sources)
+    - [4.1. Database Design for Social Networks (Schemas/Diagrams/ERMs/How Tos)](#41-database-design-for-social-networks-schemasdiagramsermshow-tos)
+    - [4.2. Database GitHub Repos](#42-database-github-repos)
+    - [4.3. Database Infrasctructure for Social Networks](#43-database-infrasctructure-for-social-networks)
+    - [4.4. Database Design Software](#44-database-design-software)
+    - [4.5. Facebook Reference](#45-facebook-reference)
 
 
 
@@ -343,7 +348,7 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 
 
 
-## 3. Supporting Documentation
+## 3. SilverChat Project Documentation
 
 * [SilverChat Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
 * [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
@@ -357,28 +362,51 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 
 
 
-## 4. Sources
+## 4. External Sources
 
-- [Top 10 Free Database Diagram Design Tools in 2025](https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/)
-- [A thorough insight into the databases used @Facebook - Scaleyourapp](https://scaleyourapp.com/what-database-does-facebook-use-a-1000-feet-deep-dive/)
-- [Resources: Database Design for Social Network - Code Dodle](https://www.codedodle.com/social-network-database.html)
-- [Which database is best for creating a social networking application? - Quora](https://www.quora.com/Which-database-is-best-for-creating-a-social-networking-application)
-- [Design Database For Social Network System In MySQL | Tutorials24x7](https://www.tutorials24x7.com/mysql/guide-to-design-database-for-social-network-system-in-mysql)
-- [MySQL vs. MongoDB: The Pros and Cons When Building a Social Network](https://dzone.com/articles/mysql-vs-mongodb-the-pros-and-cons-when-building-a)
+
+
+### 4.1. Database Design for Social Networks (Schemas/Diagrams/ERMs/How Tos)
+
+- [Facebook database schema | Reverse engineering by Anatoly Lu… | Flickr](https://www.flickr.com/photos/ikhnaton2/533233247/)
+- [Database schema for Social Networking Platform - Surfside Media](https://www.surfsidemedia.in/post/database-schema-for-social-networking-platform)
+- [Building a Social Network: Part I | by Kenneth Reilly | ITNEXT](https://itnext.io/building-a-social-network-part-i-25856fc693e1)
+- [Social network schema design in DynamoDB - Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-schema-social-network.html)
+- [Building a social Media Platform: How should the database schema be designed to efficiently store user data, content, and interactions? | by Brecht Corbeel | Medium](https://medium.com/@brechtcorbeel/building-a-social-media-platform-how-should-the-database-schema-be-designed-to-efficiently-store-9af5f0060627)
+- [SQLAlchemy: Designing a Social Network Database Schema - Sling Academy](https://www.slingacademy.com/article/sqlalchemy-designing-a-social-network-database-schema/)
+- [Databases, SQL Server, and Data Models Examples](https://datamodels.databases.biz/)
 - [mysql - Implementing Comments and Likes in database - Stack Overflow](https://stackoverflow.com/questions/8112831/implementing-comments-and-likes-in-database)
 - [How to Design Database for Social Media Platform | GeeksforGeeks](https://www.geeksforgeeks.org/how-to-design-database-for-social-media-platform/)
 - [How to Design Database for Followers-Following Systems in Social Media Apps? | GeeksforGeeks](https://www.geeksforgeeks.org/design-database-for-followers-following-systems-in-social-media-apps/)
 - [How to Design ER Diagrams for Social Media Networks | GeeksforGeeks](https://www.geeksforgeeks.org/how-to-design-er-diagrams-for-social-media-networks/)
-- [yoosuf/Messenger: Messenger Database Design Concept](https://github.com/yoosuf/Messenger)
-- [tutorials24x7/social-network-system-database-mysql: The Social Network System Database Design in MySQL to manage the Users, Friends, Follower, Messages, and Groups.](https://github.com/tutorials24x7/social-network-system-database-mysql)
-- [Databases, SQL Server, and Data Models Examples](https://datamodels.databases.biz/)
-- [SQLAlchemy: Designing a Social Network Database Schema - Sling Academy](https://www.slingacademy.com/article/sqlalchemy-designing-a-social-network-database-schema/)
-- [Building a social Media Platform: How should the database schema be designed to efficiently store user data, content, and interactions? | by Brecht Corbeel | Medium](https://medium.com/@brechtcorbeel/building-a-social-media-platform-how-should-the-database-schema-be-designed-to-efficiently-store-9af5f0060627)
-- [Social network schema design in DynamoDB - Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-schema-social-network.html)
-- [Building a Social Network: Part I | by Kenneth Reilly | ITNEXT](https://itnext.io/building-a-social-network-part-i-25856fc693e1)
-- [Database schema for Social Networking Platform - Surfside Media](https://www.surfsidemedia.in/post/database-schema-for-social-networking-platform)
-- [Facebook database schema | Reverse engineering by Anatoly Lu… | Flickr](https://www.flickr.com/photos/ikhnaton2/533233247/):
+- [Resources: Database Design for Social Network - Code Dodle](https://www.codedodle.com/social-network-database.html)
+- [Design Database For Social Network System In MySQL | Tutorials24x7](https://www.tutorials24x7.com/mysql/guide-to-design-database-for-social-network-system-in-mysql)
 
 
 
-![BOOYAH! FaceBook laid bare](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/facebook-reverse-engineered.jpg)
+### 4.2. Database GitHub Repos
+
+- [Messenger Database Design Concept](https://github.com/yoosuf/Messenger)
+- [The Social Network System Database Design in MySQL to manage the Users, Friends, Follower, Messages, and Groups.](https://github.com/tutorials24x7/social-network-system-database-mysql)
+
+
+
+### 4.3. Database Infrasctructure for Social Networks
+
+- [A thorough insight into the databases used @Facebook - Scaleyourapp](https://scaleyourapp.com/what-database-does-facebook-use-a-1000-feet-deep-dive/)
+- [Which database is best for creating a social networking application? - Quora](https://www.quora.com/Which-database-is-best-for-creating-a-social-networking-application)
+- [MySQL vs. MongoDB: The Pros and Cons When Building a Social Network](https://dzone.com/articles/mysql-vs-mongodb-the-pros-and-cons-when-building-a)
+
+
+
+### 4.4. Database Design Software
+
+- [Top 10 Free Database Diagram Design Tools in 2025](https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/)
+
+
+
+### 4.5. Facebook Reference
+
+
+
+![FaceBook laid bare](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/facebook-reverse-engineered.jpg)
