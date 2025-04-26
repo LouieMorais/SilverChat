@@ -56,6 +56,12 @@
 7.  **'SilverChat Agent' Placeholder:**
     *   Functionality: A static UI element within the chat or profile interface visually representing where the future voice/video controls (as shown in the concept mock-up) will reside. No actual calling functionality in Alpha.
     *   _TDD Approach:_ Test the conditional rendering of these placeholder UI elements.
+8. **Safety and Moderation (Alpha Implementation)**
+   - Focus on foundational elements:
+       - Drafting clear Community Guidelines.
+       - Implementing a basic user reporting mechanism.
+       - Secure password handling and input sanitisation.
+       - _Note:_ Advanced features like ID verification, AI Guard, and geographical fencing are planned for post-Alpha phases but inform the overall design philosophy.
 
 **Prototype:** A demonstration involving ~5 mock user profiles illustrating key user journeys (registration, connection, chat) and frontend-backend interaction.
 

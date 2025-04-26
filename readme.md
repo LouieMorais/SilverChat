@@ -1,5 +1,5 @@
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat - The 60+ Companionship network" />
-*Alpha 1 Release*
+*All Releases*
 
 
 
@@ -16,11 +16,9 @@
   - [1. Introduction](#1-introduction)
   - [2. What Makes SilverChat Distinctive?](#2-what-makes-silverchat-distinctive)
   - [3. Future Vision \& Enhancements](#3-future-vision--enhancements)
-  - [4. Phase 1: Alpha Development (Initial MVP)](#4-phase-1-alpha-development-initial-mvp)
-  - [5. UX/UI Design Principles](#5-uxui-design-principles)
-  - [6. Safety and Moderation (Alpha Implementation)](#6-safety-and-moderation-alpha-implementation)
-  - [7. Conclusion](#7-conclusion)
-  - [8. Supporting Documentation](#8-supporting-documentation)
+  - [4. UX/UI Design Principles](#4-uxui-design-principles)
+  - [5. Conclusion](#5-conclusion)
+  - [6. Supporting Documentation](#6-supporting-documentation)
 
 
 
@@ -72,45 +70,7 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
-## 4. Phase 1: Alpha Development (Initial MVP)
-
-**Objective:** To develop a functional Minimum Viable Product (MVP) demonstrating SilverChat's core user experience and foundational features using a strict Test-Driven Development (TDD) methodology. This phase validates the core concept and establishes the technical base.
-
-**Methodology:** Development will rigorously follow TDD principles using Jest. Tests will be written _before_ implementation code for all functionalities, ensuring code quality, maintainability, and facilitating future development. The application will be structured using the Model-View-Controller (MVC) pattern.
-
-**Alpha Features & TDD Application:**
-
-1. **User Authentication (Backend & Frontend):**
-    - Functionality: Secure user registration and login.
-    - _TDD Approach:_ Test registration success/failure (e.g., duplicate email), login success/failure, password security, session management. Test frontend validation.
-2. **Member Profile:**
-    - Functionality: Basic profile creation (username, bio, interests). View own/others' profiles.
-    - _TDD Approach:_ Test profile data storage, retrieval, and display logic.
-3. **Member Connections:**
-    - Functionality: Send, receive, accept, decline connection requests. View connections list.
-    - _TDD Approach:_ Test connection state changes, database updates, and correct list display.
-4. **Basic Text Chat:**
-    - Functionality: One-to-one text chat between connected members.
-    - _TDD Approach:_ Test message sending, receiving, storage, and history retrieval.
-5. **Member Groups (Basic):**
-    - Functionality: View predefined groups, join/leave groups, view group members.
-    - _TDD Approach:_ Test membership logic, database updates, list retrieval.
-6. **Notifications (Basic):**
-    - Functionality: In-app notifications for connection requests, new messages.
-    - _TDD Approach:_ Test notification generation, retrieval, display, and read-status updates.
-7. **'SilverChat Agent' Placeholder:**
-    - Functionality: A static UI element within the chat or profile interface visually representing where the future voice/video controls (as shown in the concept mock-up) will reside. No actual calling functionality in Alpha.
-    - _TDD Approach:_ Test the conditional rendering of these placeholder UI elements.
-
-**Prototype:** A demonstration involving ~5 mock user profiles illustrating key user journeys (registration, connection, chat) and frontend-backend interaction.
-
-
-
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
-
-
-
-## 5. UX/UI Design Principles
+## 4. UX/UI Design Principles
 
 - **Simplicity:** Clean layouts, clear language, intuitive navigation.
 - **Accessibility:** Adherence to basic WCAG guidelines (contrast, font size, keyboard navigation).
@@ -123,21 +83,7 @@ SilverChat aims for continuous evolution, focusing on:
 
 
 
-## 6. Safety and Moderation (Alpha Implementation)
-
-- Focus on foundational elements:
-    - Drafting clear Community Guidelines.
-    - Implementing a basic user reporting mechanism.
-    - Secure password handling and input sanitisation.
-    - _Note:_ Advanced features like ID verification, AI Guard, and geographical fencing are planned for post-Alpha phases but inform the overall design philosophy.
-
-
-
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
-
-
-
-## 7. Conclusion
+## 5. Conclusion
 
 SilverChat presents a compelling vision for a companionship-focused, secure, and user-friendly platform for the 60+ demographic. This proposal outlines a focused Alpha phase to build the foundational MVP using Vanilla JS and rigorous TDD, directly addressing the core need while paving the way for the advanced safety and communication features highlighted in the visual concept. It represents a commercially viable product direction with significant potential.
 
@@ -147,11 +93,13 @@ SilverChat presents a compelling vision for a companionship-focused, secure, and
 
 
 
-## 8. Supporting Documentation
+## 6. Supporting Documentation
 
-* [THIS DOCUMENT: Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
-* [Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
-* [Relational Database Schema](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database.md)
+* [THIS DOCUMENT: SilverChat Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
+* [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
+* [SilverChat Relational Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
+* [SilverChat Relational Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
+* [SilverChat Relational Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
 
 
 
