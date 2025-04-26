@@ -16,7 +16,7 @@ $RECYCLE.BIN/
 
 # Intellectual Property
 .project/development/
-../.project/architeture/img/old/
+.project/architecture/old
 
 # Node
 node_modules/
