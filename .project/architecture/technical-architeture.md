@@ -1,5 +1,6 @@
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat - The 60+ Companionship network" /> 
-*Alpha Release 1, 2 & 3*
+
+*Alpha Releases 1, 2 & 3*
 
 
 
