@@ -34,7 +34,7 @@ SilverChat is envisioned as a premier online platform dedicated to fostering com
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
-![SilverChat Initial Concept](https://github.com/LouieMorais/SilverChat/blob/main/.project/concepts/SilverChat.png?raw=true)
+![SilverChat Initial Concept](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/img/SilverChat.png?raw=true)
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
