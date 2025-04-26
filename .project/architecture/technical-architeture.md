@@ -19,7 +19,7 @@
   - [3. Development Methodology \& Team](#3-development-methodology--team)
   - [4. Structure](#4-structure)
   - [5. Potential Challenges \& Mitigation](#5-potential-challenges--mitigation)
-  - [6. Supporting Documentation](#6-supporting-documentation)
+  - [6. SilverChat Project Documentation](#6-silverchat-project-documentation)
 
 
 
@@ -206,10 +206,10 @@ silverchat/
 
 
 
-## 6. Supporting Documentation
+## 6. SilverChat Project Documentation
 
 * [SilverChat Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
-* **THIS DOCUMENT:** SilverChat Technical Architecture
-* [SilverChat Relational Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
-* [SilverChat Relational Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
-* [SilverChat Relational Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
+* **THIS DOCUMENT:** *SilverChat Technical Architecture*
+* [SilverChat Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
+* [SilverChat Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
+* [SilverChat Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)

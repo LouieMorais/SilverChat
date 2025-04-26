@@ -19,7 +19,7 @@
   - [3. Future Vision \& Enhancements](#3-future-vision--enhancements)
   - [4. UX/UI Design Principles](#4-uxui-design-principles)
   - [5. Conclusion](#5-conclusion)
-  - [6. Supporting Documentation](#6-supporting-documentation)
+  - [6. SilverChat Project Documentation](#6-silverchat-project-documentation)
 
 
 
@@ -96,13 +96,13 @@ SilverChat presents a compelling vision for a companionship-focused, secure, and
 
 
 
-## 6. Supporting Documentation
+## 6. SilverChat Project Documentation
 
-* **THIS DOCUMENT:** SilverChat Project Scope (README)
+* **THIS DOCUMENT:** *SilverChat Project Scope (README)*
 * [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
-* [SilverChat Relational Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
-* [SilverChat Relational Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
-* [SilverChat Relational Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
+* [SilverChat Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
+* [SilverChat Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
+* [SilverChat Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
 
 
 

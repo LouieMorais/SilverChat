@@ -4,7 +4,7 @@
 
 
 
-# Relational Database Schema 1: Member Account & Profile
+# Database Schema 1: Member Account & Profile
 
 
 
@@ -12,7 +12,7 @@
 
 
 
-- [Relational Database Schema 1: Member Account \& Profile](#relational-database-schema-1-member-account--profile)
+- [Database Schema 1: Member Account \& Profile](#database-schema-1-member-account--profile)
   - [1. Member Account \& Profile Tables](#1-member-account--profile-tables)
     - [1.1. Lookup Tables](#11-lookup-tables)
     - [1.2. Core Data Tables](#12-core-data-tables)
@@ -361,9 +361,9 @@ Ref address_member: address.member_id > member.id [delete: cascade]
 
 * [SilverChat Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
 * [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
-* **THIS DOCUMENT:** SilverChat Relational Database Schema 1: Member Account and Profile
-* [SilverChat Relational Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
-* [SilverChat Relational Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
+* **THIS DOCUMENT:** *SilverChat Database Schema 1: Member Account and Profile*
+* [SilverChat Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
+* [SilverChat Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
 
 
 

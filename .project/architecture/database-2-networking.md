@@ -4,7 +4,7 @@
 
 
 
-# Relational Database Schema 2: Member Networking
+# Database Schema 2: Member Networking
 
 
 
@@ -12,7 +12,7 @@
 
 
 
-- [Relational Database Schema 2: Member Networking](#relational-database-schema-2-member-networking)
+- [Database Schema 2: Member Networking](#database-schema-2-member-networking)
   - [1. Member Networking Tables](#1-member-networking-tables)
     - [1.1. Lookup Tables](#11-lookup-tables)
     - [1.2. Core Data Tables](#12-core-data-tables)
@@ -341,9 +341,9 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 ## 3. SilverChat Project Documentation
 * [SilverChat Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
 * [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
-* [SilverChat Relational Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
-* **THIS DOCUMENT:** SilverChat Relational Database Schema 2: Member Networking
-* [SilverChat Relational Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
+* [SilverChat Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
+* **THIS DOCUMENT:** *SilverChat Database Schema 2: Member Networking*
+* [SilverChat Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
 
 
 
