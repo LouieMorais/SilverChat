@@ -348,7 +348,7 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 * [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
 * [SilverChat Relational Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
 * [SilverChat Relational Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
-* THIS DOCUMENT: SilverChat Relational Database Schema 3: Member Messaging
+* **THIS DOCUMENT:** SilverChat Relational Database Schema 3: Member Messaging
 
 
 
