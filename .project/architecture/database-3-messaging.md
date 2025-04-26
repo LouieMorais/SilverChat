@@ -11,7 +11,7 @@
 
 
 
-- [Relational Database Schema 3: Messaging](#relational-database-schema-3-messaging)
+- [Relational Database Schema 3: Member Messaging](#relational-database-schema-3-member-messaging)
   - [1. Member Messaging Tables](#1-member-messaging-tables)
     - [1.1. Lookup Tables](#11-lookup-tables)
     - [1.2. Core Data Tables](#12-core-data-tables)
@@ -329,7 +329,7 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 ## 3. Supporting Documentation
 
 * [SilverChat Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
-* [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/architeture.md)
+* [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
 * [SilverChat Relational Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
 * [SilverChat Relational Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
 * [THIS DOCUMENT: SilverChat Relational Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
