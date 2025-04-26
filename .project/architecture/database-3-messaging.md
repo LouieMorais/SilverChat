@@ -40,6 +40,22 @@ This document outlines the proposed database schema for handling member-to-membe
 
 
 
+---
+
+
+
+**Final Database Design - Alpha Releases 1, 2 & 3:**
+
+![SilverChat Final Database Schema](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-db1-2-3-all.png)
+
+[View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-0-Full-Picture-680c2e271ca52373f56b94e4)
+
+
+
+---
+
+
+
 ### 1.1. Lookup Tables
 
 **Table: `conversation_type`**

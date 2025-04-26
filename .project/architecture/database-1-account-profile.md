@@ -34,9 +34,25 @@
 This schema defines the core tables required for member registration, authentication, basic profile information, status tracking, and address details for the SilverChat Alpha Release 1.
 
 
-![SilverChat Database Schema 2: Member Networking](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-db2-networking.png)
+![SilverChat Database Schema 1: Member Account & Profile](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-db1-account-profile.png)
 
 [View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-1-Account-and-Profile-680bcc1b1ca52373f5650e84)
+
+
+
+---
+
+
+
+**Final Database Design - Alpha Releases 1, 2 & 3:**
+
+![SilverChat Final Database Schema](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-db1-2-3-all.png)
+
+[View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-0-Full-Picture-680c2e271ca52373f56b94e4)
+
+
+
+---
 
 
 
