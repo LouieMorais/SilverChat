@@ -1,6 +1,8 @@
-// Update with your config settings.
+// Commands used
 // npx knex migrate:latest --knexfile=knexfile.js
 // npx knex migrate:make create_alpha1_schema
+// npx knex seed:make seed_inital_lookup_tables  
+// npx knex seed:run 
 
 // Load environment variables from .env file
 require('dotenv').config({ path: './.env' });

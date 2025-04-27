@@ -16,6 +16,7 @@
 - [Testing Strategy \& Guidelines](#testing-strategy--guidelines)
   - [#. SilverChat Project Documentation](#-silverchat-project-documentation)
   - [#. External Sources](#-external-sources)
+    - [#.1. Code Review Checklist](#1-code-review-checklist)
     - [#.1. Shift-Left Testing Practice](#1-shift-left-testing-practice)
     - [#.2. Software Testing Tools](#2-software-testing-tools)
     - [#.3. Further Testing Practices](#3-further-testing-practices)
@@ -59,7 +60,13 @@
 
 
 
-### #.1. Shift-Left Testing Practice
+### #.1. Code Review Checklist
+
+* [Security code review checklist](https://www.awesomecodereviews.com/checklists/secure-code-review-checklist/)
+
+
+
+### #.2. Shift-Left Testing Practice
 
 * [Shift Left Testing – Software testing | GeeksforGeeks](https://www.geeksforgeeks.org/shift-left-testing-software-testing/)
   * [Unit Testing – Software Testing | GeeksforGeeks](https://www.geeksforgeeks.org/unit-testing-software-testing/)
@@ -71,7 +78,7 @@
 
 
 
-### #.2. Software Testing Tools
+### #.3. Software Testing Tools
 
 * [Test Management tools](https://www.geeksforgeeks.org/software-testing-test-management-tools/)
 * [Defect /Bug tracking tool](https://www.geeksforgeeks.org/bug-tracking-system/)
@@ -84,7 +91,7 @@
 
 
 
-### #.3. Further Testing Practices
+### #.4. Further Testing Practices
 #### A
 * [Acceptance Testing](https://www.geeksforgeeks.org/acceptance-testing-software-testing/)
 * [Accessibility Testing](https://www.geeksforgeeks.org/software-testing-accessibility-testing/)
@@ -110,7 +117,7 @@
 * [Component Testing](https://www.geeksforgeeks.org/component-software-testing/)
 * [Cross-browser Testing](https://www.geeksforgeeks.org/cross-browser-testing-how-to-run-cases-tools-common-issues/)
 
---- 
+---
 
 #### D
 * [Database Testing](https://www.geeksforgeeks.org/software-testing-database-testing/)
