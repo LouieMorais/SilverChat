@@ -1,6 +1,10 @@
 // Commands used
-// npx knex migrate:latest --knexfile=knexfile.js
+// npm install knex -g
+// npm install knex --save-dev
+// npx knex init
 // npx knex migrate:make create_alpha1_schema
+// npx knex migrate:latest --knexfile=knexfile.js
+// response: Created Migration: W:\learning\SilverChat\backend\migrations\20250427000900_create_alpha1_schema.js
 // npx knex seed:make seed_inital_lookup_tables  
 // npx knex seed:run 
 
