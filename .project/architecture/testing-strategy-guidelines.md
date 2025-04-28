@@ -11,15 +11,128 @@
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
  
+## Core Principles:
+* Shift-Left Approach: Emphasize testing early and often throughout the development lifecycle.
+* Automation Focus: Automate tests wherever practical (Unit, Integration, API, Regression).
+* User-Centric: Prioritize testing aspects critical to the target audience (Usability, Accessibility, Safety).
+* Risk-Based: Focus testing efforts on high-risk areas (Security, Core Functionality, Data Integrity).
 
+## 1. Development Phase Testing (Continuous):
+* Static Testing:
+* Code Reviews (Manual): Peer review of code for logic, style, security (Ref: Code Review Checklist).
+* Static Analysis (Automated): Use linters (like ESLint) and potentially static security analysis tools (SAST) to catch issues without running code.
+* Unit Testing (Automated):
+* Focus: Test individual functions, modules, or components in isolation (e.g., utility functions, validation logic, individual React components if frontend exists).
+* Tools: Jest.
+* Goal: Verify correctness of small code units, high code coverage (Ref: Code Coverage, Statement Coverage, Branch Coverage).
+* Integration Testing (Automated):
+* Focus: Test the interaction between different units/modules (e.g., API route handler calling database logic, component interactions).
+* Tools: Jest, Supertest, Knex (for DB interactions).
+* Goal: Verify that integrated parts work together as expected.
+
+## 2. API Layer Testing (Backend):
+* API Functional Testing (Automated):
+* Focus: Test API endpoints directly for correct responses, status codes, and behaviour based on inputs (valid and invalid). Covers Positive and Negative Testing scenarios.
+* Tools: Supertest (via Jest), Postman/Insomnia (for manual/exploratory API testing).
+* Goal: Ensure API behaves according to specifications.
+* API Security Testing (Manual/Automated):
+* Focus: Test for common API vulnerabilities (authentication, authorization, injection flaws, rate limiting).
+* Tools: Security-focused tools (e.g., OWASP ZAP), manual penetration testing (potentially later).
+* Goal: Identify and mitigate security risks in the API.
+* API Performance Testing (Automated - Later Stage):
+* Focus: Test API endpoint response times under various loads.
+* Tools: k6, JMeter, Postman (basic load tests).
+* Goal: Ensure API meets performance requirements.
+
+## 3. System & End-to-End Testing (When Frontend Exists):
+* GUI Testing (Manual/Automated):
+* Focus: Test the user interface elements and interactions.
+* Tools: Cypress, Playwright, Selenium (for automation); Manual testing.
+* Goal: Verify UI functionality and appearance.
+* End-to-End (E2E) Testing (Automated):
+* Focus: Test complete user flows through the application (e.g., registration, profile update, sending a message) from the UI down to the database.
+* Tools: Cypress, Playwright.
+* Goal: Verify that entire features work correctly from a user's perspective.
+* Cross-Browser/Compatibility Testing (Manual/Automated):
+* Focus: Ensure application works across supported browsers and devices.
+* Tools: BrowserStack, Sauce Labs (for automation); Manual testing on different browsers.
+* Goal: Provide a consistent experience.
+
+## 4. Non-Functional & Specialized Testing:
+* Usability Testing (Manual - Crucial):
+* Focus: Observe real users (from target demographic) interacting with the application to identify ease-of-use issues.
+* Methods: Moderated/unmoderated sessions, task analysis.
+* Goal: Ensure the application is intuitive and effective for SilverChat users.
+* Accessibility Testing (Manual/Automated):
+* Focus: Verify compliance with accessibility standards (WCAG).
+* Tools: Axe, WAVE, screen readers; Manual checks.
+* Goal: Ensure inclusivity for users with disabilities.
+* Performance & Load Testing (System Level - Automated - Later Stage):
+* Focus: Test overall system performance, stability, and scalability under expected and peak loads.
+* Tools: k6, JMeter.
+* Goal: Ensure reliability and responsiveness.
+* Security Testing (System Level - Manual/Automated):
+* Focus: Comprehensive security assessment, including penetration testing.
+* Tools: OWASP ZAP, Burp Suite; Manual expert review.
+* Goal: Identify and fix system-wide vulnerabilities.
+* Recovery Testing (Manual/Automated):
+* Focus: Test the system's ability to recover from failures (e.g., server crash, database outage).
+* Methods: Simulate failures, verify recovery procedures.
+* Goal: Ensure resilience and data integrity.
+* Database Testing (Manual/Automated):
+* Focus: Data integrity, constraint validation, performance of complex queries, backup/restore procedures.
+* Tools: SQL scripts, Knex (in tests), specialized DB testing tools.
+* Goal: Ensure data correctness and database reliability.
+
+## 5. Release Phase Testing:
+* Regression Testing (Automated/Manual):
+* Focus: Re-run relevant tests (Unit, Integration, E2E) to ensure no existing functionality is broken by last-minute changes. Perform targeted manual checks on affected areas.
+* Goal: Prevent regressions before release.
+* Smoke Testing (Automated/Manual):
+* Focus: Quick tests on the core, critical functionalities after a build/deployment to ensure the system is stable enough for further testing.
+* Goal: Basic build verification.
+* Alpha/Beta Testing (Manual - User Feedback):
+* Focus: Gather feedback from real users on functionality, usability, and bugs in a pre-release version.
+* Goal: Identify real-world issues and gather user insights.
+* Acceptance Testing (Manual - Stakeholder/User):
+* Focus: Verify that the system meets the business requirements and user needs. Often involves User Acceptance Testing (UAT).
+* Goal: Formal acceptance of the release.
+
+## Relevance of Shift-Left Testing for SilverChat
+Shift-left testing is highly relevant and beneficial for the SilverChat project.
+
+Shift-left means moving testing activities earlier in the development lifecycle – literally "shifting left" on a typical project timeline diagram. Instead of waiting until development is "complete" to start testing, you integrate testing continuously from the beginning.
+
+### Why it's relevant for SilverChat:
+
+* Early Bug Detection: Finding and fixing bugs early (during coding or component testing) is significantly cheaper and faster than finding them later during system testing or after release.
+* Improved Quality: Building quality in from the start, through practices like TDD (which involves writing tests before code), code reviews, and continuous integration testing, leads to a more robust and reliable application. This is crucial for gaining user trust, especially with a focus on safety and companionship.
+* Faster Feedback Loops: Developers get faster feedback on their code through automated unit and integration tests, allowing them to correct issues quickly.
+* Reduced Risk: By continuously testing and integrating, you reduce the risk of major issues surfacing late in the project, which could delay releases or impact users negatively.
+* Foundation for Automation: It encourages building a comprehensive suite of automated tests (Unit, Integration, API) which forms the backbone of regression testing and enables faster, more confident releases later on.
+How we're already applying it (and can continue):
+
+* Unit/Integration Tests: Writing Jest tests for database connections and server endpoints (Steps 11) is a core shift-left practice. We should continue this for all new backend logic and API routes.
+* TDD: While we haven't strictly followed TDD for every step so far, adopting it more formally (write failing test -> write code -> refactor) for new features would strengthen the shift-left approach.
+* Code Reviews: Implementing a code review process before merging changes ensures another layer of quality control early on.
+* Static Analysis: Using linters helps catch syntax errors and style issues automatically as code is written.
+* Early API Testing: Manually testing API endpoints with tools like Insomnia as they are developed provides quick feedback.
 
 - [Testing Strategy \& Guidelines](#testing-strategy--guidelines)
+  - [Core Principles:](#core-principles)
+  - [1. Development Phase Testing (Continuous):](#1-development-phase-testing-continuous)
+  - [2. API Layer Testing (Backend):](#2-api-layer-testing-backend)
+  - [3. System \& End-to-End Testing (When Frontend Exists):](#3-system--end-to-end-testing-when-frontend-exists)
+  - [4. Non-Functional \& Specialized Testing:](#4-non-functional--specialized-testing)
+  - [5. Release Phase Testing:](#5-release-phase-testing)
+  - [Relevance of Shift-Left Testing for SilverChat](#relevance-of-shift-left-testing-for-silverchat)
+    - [Why it's relevant for SilverChat:](#why-its-relevant-for-silverchat)
   - [#. SilverChat Project Documentation](#-silverchat-project-documentation)
   - [#. External Sources](#-external-sources)
     - [#.1. Code Review Checklist](#1-code-review-checklist)
-    - [#.1. Shift-Left Testing Practice](#1-shift-left-testing-practice)
-    - [#.2. Software Testing Tools](#2-software-testing-tools)
-    - [#.3. Further Testing Practices](#3-further-testing-practices)
+    - [#.2. Shift-Left Testing Practice](#2-shift-left-testing-practice)
+    - [#.3. Software Testing Tools](#3-software-testing-tools)
+    - [#.4. Further Testing Practices](#4-further-testing-practices)
       - [A](#a)
       - [B](#b)
       - [C](#c)
