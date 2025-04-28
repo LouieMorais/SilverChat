@@ -2,8 +2,6 @@
 
 *Alpha Release 3*
 
-
-
 # Database Schema 3: Member Messaging
 
 
@@ -73,6 +71,10 @@ This document outlines the proposed database schema for handling member-to-membe
 
 
 
+---
+
+
+
 ### 1.2. Core Data Tables
 
 **Table: `conversation`** (Represents a chat thread)
@@ -118,6 +120,10 @@ This document outlines the proposed database schema for handling member-to-membe
 ## 2. SQL Representation & Implementation Notes
 
 These definitions assume integration into the existing PostgreSQL database used by SilverChat. Implementation should use Knex.js migrations.
+
+
+
+---
 
 
 
@@ -232,6 +238,10 @@ CREATE INDEX idx_message_conversation_created_at ON message (conversation_id, cr
 -- END: Messaging Feature Tables                                   --
 
 ```
+
+
+
+----
 
 
 
@@ -350,10 +360,10 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 
 ## 3. SilverChat Project Documentation
 
-* [SilverChat Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
-* [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
-* [SilverChat Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
-* [SilverChat Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
+* [SilverChat Project Scope (README) | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
+* [SilverChat Technical Architecture | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
+* [SilverChat Database Schema 1: Member Account and Profile | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
+* [SilverChat Database Schema 2: Member Networking | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
 * **THIS DOCUMENT:** *SilverChat Database Schema 3: Member Messaging*
 
 
@@ -384,10 +394,18 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 
 
 
+---
+
+
+
 ### 4.2. Database GitHub Repos
 
 - [Messenger Database Design Concept](https://github.com/yoosuf/Messenger)
 - [The Social Network System Database Design in MySQL to manage the Users, Friends, Follower, Messages, and Groups.](https://github.com/tutorials24x7/social-network-system-database-mysql)
+
+
+
+---
 
 
 
@@ -399,9 +417,17 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 
 
 
+---
+
+
+
 ### 4.4. Database Design Software
 
 - [Top 10 Free Database Diagram Design Tools in 2025](https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/)
+
+
+
+---
 
 
 

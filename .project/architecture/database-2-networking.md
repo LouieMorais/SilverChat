@@ -2,8 +2,6 @@
 
 *Alpha Release 2*
 
-
-
 # Database Schema 2: Member Networking
 
 
@@ -90,6 +88,10 @@ This schema defines the tables required for member-to-member connections and int
 
 
 
+---
+
+
+
 ### 1.2. Core Data Tables
 
 *(These tables depend on the `member` table defined in Schema 1: Member Account & Profile)*
@@ -142,6 +144,10 @@ This schema defines the tables required for member-to-member connections and int
 ## 2. SQL Representation & Implementation Notes
 
 The following SQL `CREATE TABLE` statements represent the database structure defined above. These are provided for illustrative and cross-referencing purposes. Actual implementation will use Knex.js migrations. The `member` table definition is included below **for context and validation purposes only**; it is part of Schema 1 and should not be re-created.
+
+
+
+---
 
 
 
@@ -237,6 +243,10 @@ CREATE TABLE club_membership (
 
 -- END: Networking Feature Tables                                  --
 ```
+
+
+
+---
 
 
 
@@ -339,11 +349,11 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 
 
 ## 3. SilverChat Project Documentation
-* [SilverChat Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
-* [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
-* [SilverChat Database Schema 1: Member Account and Profile](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
+* [SilverChat Project Scope (README) | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
+* [SilverChat Technical Architecture | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
+* [SilverChat Database Schema 1: Member Account and Profile | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-1-account-profile.md)
 * **THIS DOCUMENT:** *SilverChat Database Schema 2: Member Networking*
-* [SilverChat Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
+* [SilverChat Database Schema 3: Member Messaging | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
 
 
 
@@ -355,7 +365,7 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 
 
 
-### 4.1. Database Design for Social Networks (Schemas/Diagrams/ERMs/How Tos)
+### 4.1. Database Design for Social Networks (Schemas / Diagrams / ERMs / How Tos)
 
 - [Facebook database schema | Reverse engineering by Anatoly Lu… | Flickr](https://www.flickr.com/photos/ikhnaton2/533233247/)
 - [Database schema for Social Networking Platform - Surfside Media](https://www.surfsidemedia.in/post/database-schema-for-social-networking-platform)
@@ -373,10 +383,18 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 
 
 
+---
+
+
+
 ### 4.2. Database GitHub Repos
 
 - [Messenger Database Design Concept](https://github.com/yoosuf/Messenger)
 - [The Social Network System Database Design in MySQL to manage the Users, Friends, Follower, Messages, and Groups.](https://github.com/tutorials24x7/social-network-system-database-mysql)
+
+
+
+---
 
 
 
@@ -388,9 +406,17 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 
 
 
+----
+
+
+
 ### 4.4. Database Design Software
 
 - [Top 10 Free Database Diagram Design Tools in 2025](https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/)
+
+
+
+---
 
 
 

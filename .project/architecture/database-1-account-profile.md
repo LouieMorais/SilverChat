@@ -1,8 +1,6 @@
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat - The 60+ Companionship network" /> 
 
-*Alpha Release 1*
-
-
+*Alpha Release 1* 
 
 # Database Schema 1: Member Account & Profile
 
@@ -121,6 +119,10 @@ These tables provide predefined options for various fields, ensuring consistency
 
 
 
+---
+
+
+
 ### 1.2. Core Data Tables
 
 These tables store the primary data about each member.
@@ -176,6 +178,10 @@ These tables store the primary data about each member.
 ## 2. SQL Representation & Implementation Notes
 
 The following SQL `CREATE TABLE` statements represent the database structure defined above. These are provided for illustrative and cross-referencing purposes. Actual implementation will use Knex.js migrations.
+
+
+
+---
 
 
 
@@ -267,6 +273,10 @@ CREATE TABLE address (
 
 
 
+---
+
+
+
 ### 2.2. DBML Syntax
 
 ```dbml
@@ -351,6 +361,10 @@ Table address {
 Ref address_member: address.member_id > member.id [delete: cascade]
 
 ```
+
+
+
+---
 
 
 
@@ -451,15 +465,15 @@ exports.down = function(knex) {
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
-
+
 
 ## 3. SilverChat Project Documentation
 
-* [SilverChat Project Scope (README)](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
-* [SilverChat Technical Architecture](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
+* [SilverChat Project Scope (README) | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/readme.md)
+* [SilverChat Technical Architecture | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/technical-architeture.md)
 * **THIS DOCUMENT:** *SilverChat Database Schema 1: Member Account and Profile*
-* [SilverChat Database Schema 2: Member Networking](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
-* [SilverChat Database Schema 3: Member Messaging](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
+* [SilverChat Database Schema 2: Member Networking | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
+* [SilverChat Database Schema 3: Member Messaging | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
 
 
 
@@ -489,10 +503,18 @@ exports.down = function(knex) {
 
 
 
+---
+
+
+
 ### 4.2. Database GitHub Repos
 
 - [Messenger Database Design Concept](https://github.com/yoosuf/Messenger)
 - [The Social Network System Database Design in MySQL to manage the Users, Friends, Follower, Messages, and Groups.](https://github.com/tutorials24x7/social-network-system-database-mysql)
+
+
+
+---
 
 
 
@@ -504,9 +526,17 @@ exports.down = function(knex) {
 
 
 
+---
+
+
+
 ### 4.4. Database Design Software
 
 - [Top 10 Free Database Diagram Design Tools in 2025](https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/)
+
+
+
+----
 
 
 

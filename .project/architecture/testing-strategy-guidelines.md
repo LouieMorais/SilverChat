@@ -2,15 +2,13 @@
 
 *All Releases*
 
-
-
 # Testing Strategy & Guidelines
 
 
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
- 
+
 ## Core Principles:
 * Shift-Left Approach: Emphasize testing early and often throughout the development lifecycle.
 * Automation Focus: Automate tests wherever practical (Unit, Integration, API, Regression).
