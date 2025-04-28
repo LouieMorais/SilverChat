@@ -22,7 +22,7 @@
   - [4. External Sources](#4-external-sources)
     - [4.1. Database Design for Social Networks (Schemas/Diagrams/ERMs/How Tos)](#41-database-design-for-social-networks-schemasdiagramsermshow-tos)
     - [4.2. Database GitHub Repos](#42-database-github-repos)
-    - [4.3. Database Infrasctructure for Social Networks](#43-database-infrasctructure-for-social-networks)
+    - [4.3. Database Infrastructure for Social Networks](#43-database-infrastructure-for-social-networks)
     - [4.4. Database Design Software](#44-database-design-software)
     - [4.5. Facebook Reference](#45-facebook-reference)
 
@@ -465,7 +465,7 @@ exports.down = function(knex) {
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
-
+
 
 ## 3. SilverChat Project Documentation
 
