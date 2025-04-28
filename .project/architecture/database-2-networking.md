@@ -19,7 +19,7 @@
     - [2.2. DBML Syntax](#22-dbml-syntax)
   - [3. SilverChat Project Documentation](#3-silverchat-project-documentation)
   - [4. External Sources](#4-external-sources)
-    - [4.1. Database Design for Social Networks (Schemas/Diagrams/ERMs/How Tos)](#41-database-design-for-social-networks-schemasdiagramsermshow-tos)
+    - [4.1. Database Design for Social Networks (Schemas / Diagrams / ERMs / How Tos)](#41-database-design-for-social-networks-schemas--diagrams--erms--how-tos)
     - [4.2. Database GitHub Repos](#42-database-github-repos)
     - [4.3. Database Infrasctructure for Social Networks](#43-database-infrasctructure-for-social-networks)
     - [4.4. Database Design Software](#44-database-design-software)
@@ -41,7 +41,7 @@ This schema defines the tables required for member-to-member connections and int
 
 [View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-2-Networking-680c18471ca52373f56aa57e)
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -53,7 +53,7 @@ This schema defines the tables required for member-to-member connections and int
 
 [View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-0-Full-Picture-680c2e271ca52373f56b94e4)
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -86,7 +86,7 @@ This schema defines the tables required for member-to-member connections and int
 | `id`        | `SERIAL`    | `PRIMARY KEY`     | Auto-incrementing unique identifier for club status. | 1, 2, 3, 4                                   |
 | `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the status within a club.                    | 'Invited', 'Active', 'Suspended', 'Banned' |
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -135,7 +135,7 @@ This schema defines the tables required for member-to-member connections and int
 | `joined_at`                | `TIMESTAMPTZ` | `NOT NULL DEFAULT NOW()`                                                    | Timestamp when the member joined the club (or was invited).                 |
 |                            |               | `PRIMARY KEY (member_id, club_id)`                                          | Composite primary key ensures a member has only one entry per club.         |
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
@@ -244,7 +244,7 @@ CREATE TABLE club_membership (
 -- END: Networking Feature Tables                                  --
 ```
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -342,7 +342,7 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 // END: Networking Feature Tables
 ```
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -355,7 +355,7 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 * **THIS DOCUMENT:** *SilverChat Database Schema 2: Member Networking*
 * [SilverChat Database Schema 3: Member Messaging | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -381,7 +381,7 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 - [Resources: Database Design for Social Network - Code Dodle](https://www.codedodle.com/social-network-database.html)
 - [Design Database For Social Network System In MySQL | Tutorials24x7](https://www.tutorials24x7.com/mysql/guide-to-design-database-for-social-network-system-in-mysql)
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -392,7 +392,7 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 - [Messenger Database Design Concept](https://github.com/yoosuf/Messenger)
 - [The Social Network System Database Design in MySQL to manage the Users, Friends, Follower, Messages, and Groups.](https://github.com/tutorials24x7/social-network-system-database-mysql)
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -404,7 +404,7 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 - [Which database is best for creating a social networking application? - Quora](https://www.quora.com/Which-database-is-best-for-creating-a-social-networking-application)
 - [MySQL vs. MongoDB: The Pros and Cons When Building a Social Network](https://dzone.com/articles/mysql-vs-mongodb-the-pros-and-cons-when-building-a)
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ----
 
@@ -414,7 +414,7 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 
 - [Top 10 Free Database Diagram Design Tools in 2025](https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/)
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -428,5 +428,5 @@ Ref membership_club: club_membership.club_id > club.id [delete: cascade]
 
 
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 

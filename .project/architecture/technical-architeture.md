@@ -39,7 +39,7 @@
 
 This document summarizes `readme.md`, `technical-architeture.md`, `database-1-account-profile.md`, and `development-setup.md`, providing a holistic view of the project's purpose, the technical foundation laid, the current state of development, and the immediate next steps focused on building the Alpha MVP features using TDD.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -55,7 +55,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
     *   **Uncompromising Safety & Trust:** Robust member protection, including planned identity verification and AI monitoring ("AI Guard").
     *   **Simplicity & Accessibility:** Intuitive, clear UI/UX designed for the target demographic.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -74,7 +74,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
     *   Foundational Safety: Community Guidelines, basic reporting, secure password handling.
 *   **Purpose:** Validate the core concept, establish the technical base using TDD, and prepare for future enhancements.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -91,7 +91,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
 *   **Environment:** `dotenv` for environment variables.
 *   **Tools:** Git/GitHub, VS Code, Insomnia.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -102,7 +102,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
 *   **Strict Test-Driven Development (TDD):** Using Jest for backend tests (Red-Green-Refactor cycle). Tests written *before* implementation code.
 *   **Agile Principles:** Iterative development, small testable units.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -123,7 +123,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
     *   **`.gitignore`:** Ignores `node_modules/`, `.env`, etc.
     *   **`.env` / `.env.example`:** Environment variable management.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -139,7 +139,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
 *   **Key Relationships:** FKs link `member` to lookups; 1:1 `member` <-> `address`.
 *   **Data Integrity:** Constraints (`PK`, `FK`, `NOT NULL`, `UNIQUE`, `DEFAULT`) and indexes applied.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -152,7 +152,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
 *   **Run Seeds:** `npx knex seed:run`.
 *   **Run Tests:** `npm test` (Jest).
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -165,7 +165,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
 *   Enhanced group features and offline meetups.
 *   Potential "No-Scam Guarantee".
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
@@ -209,7 +209,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
 
 **Prototype:** A demonstration involving ~5 mock user profiles illustrating key user journeys (registration, connection, chat) and frontend-backend interaction.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -225,7 +225,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
 *   **API Development/Testing Tool:** Insomnia (or similar like Postman) - _Used during development for sending requests to the backend API and inspecting responses._
 *   **Architecture:** Model-View-Controller (MVC) - _Backend architectural pattern for separation of concerns._
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -237,7 +237,7 @@ This document summarizes `readme.md`, `technical-architeture.md`, `database-1-ac
 *   **Team:** Louie Morais (Founder)
     *   Roles: Product Owner, UX/UI Designer, Full-Stack JavaScript Developer.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -333,7 +333,7 @@ silverchat/
 
 
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -345,7 +345,7 @@ silverchat/
 - **Scope Management:** Balancing the ambitious vision with achievable Alpha goals. _Mitigation:_ Rigorous adherence to the defined Alpha scope, logging future ideas.
 - **TDD Implementation:** Ensuring effective TDD practice. _Mitigation:_ Consistent application of the Red-Green-Refactor cycle, starting with simple tests.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -359,5 +359,5 @@ silverchat/
 * [SilverChat Database Schema 2: Member Networking | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
 * [SilverChat Database Schema 3: Member Messaging | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 

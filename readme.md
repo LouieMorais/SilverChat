@@ -31,13 +31,14 @@
 
 SilverChat is envisioned as a premier online platform dedicated to fostering companionship and connection amongst individuals aged 60 and over. In a digital landscape often focused on romance, SilverChat carves a unique niche by prioritising friendship, shared interests, and mutual support. The platform will provide an intuitive, accessible, and exceptionally secure environment where members can "chat like in the good old days" – connecting effortlessly through text, voice, and video via the streamlined 'SilverChat Agent'. Simplicity, user-friendliness, and robust member protection are the cornerstones of the SilverChat philosophy.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
-
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 ---
 
 
 ![SilverChat Initial Concept](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/img/SilverChat.png?raw=true)
+
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
@@ -50,7 +51,8 @@ SilverChat is envisioned as a premier online platform dedicated to fostering com
 - **Uncompromising Safety & Trust:** Security is paramount. SilverChat plans to implement industry-leading safety measures, including identity verification concepts ("Trusted Community, Real Connections") and advanced monitoring systems like the proposed "SilverChat AI Guard" to proactively protect members from scams and harassment.
 - **Simplicity and Accessibility:** The user interface (UI) and user experience (UX) will be meticulously designed for clarity ("Simple, clutter-free interface"), ease of navigation, and accessibility, considering factors like font size, contrast, and intuitive controls.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
+
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
@@ -67,7 +69,8 @@ SilverChat aims for continuous evolution, focusing on:
 - **Facilitating Offline Connections:** Introducing features to support the organisation of local meetups and group events, translating online connections into real-world socialisation.
 - **Strengthening Groups & Clubs:** Enhancing group functionality for virtual clubs (e.g., Book Clubs, Hobby Groups, Local Area Groups) with better organisational tools.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
+
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
@@ -80,7 +83,8 @@ SilverChat aims for continuous evolution, focusing on:
 - **Trustworthiness:** Professional appearance, clear safety communication.
 - **Privacy-Awareness:** Incorporating privacy considerations, such as the future goal of automatic video backgrounds.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
+
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
@@ -90,7 +94,8 @@ SilverChat aims for continuous evolution, focusing on:
 
 SilverChat presents a compelling vision for a companionship-focused, secure, and user-friendly platform for the 60+ demographic. This proposal outlines a focused Alpha phase to build the foundational MVP using Vanilla JS and rigorous TDD, directly addressing the core need while paving the way for the advanced safety and communication features highlighted in the visual concept. It represents a commercially viable product direction with significant potential.
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
+
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
@@ -106,4 +111,4 @@ SilverChat presents a compelling vision for a companionship-focused, secure, and
 
 
 
-<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+<a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
