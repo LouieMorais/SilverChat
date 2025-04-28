@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat - The 60+ Companionship network" /> 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" id ="top" width="100%" alt="SilverChat - The 60+ Companionship network" /> 
 
 *Alpha Release 1* 
 
@@ -43,7 +43,7 @@ This schema defines the core tables required for member registration, authentica
 
 [View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-1-Account-and-Profile-680bcc1b1ca52373f5650e84)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -55,7 +55,7 @@ This schema defines the core tables required for member registration, authentica
 
 [View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-0-Full-Picture-680c2e271ca52373f56b94e4)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -117,7 +117,7 @@ These tables provide predefined options for various fields, ensuring consistency
 | `id`        | `SERIAL`    | `PRIMARY KEY`     | Auto-incrementing unique identifier for marital status. | 1, 2, 3, 4, 5, 6                                                               |
 | `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the marital status option.                   | 'Single', 'Married', 'Civil Partnership', 'Divorced', 'Widowed', 'Prefer not to say' |
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -169,7 +169,7 @@ These tables store the primary data about each member.
 | `country_code`      | `VARCHAR(2)`  | `NOT NULL DEFAULT 'GB'`                                   | ISO 3166-1 alpha-2 country code.                                   |
 | `created_at`        | `TIMESTAMPTZ` | `NOT NULL DEFAULT NOW()`                                  | Timestamp of record creation.                                      |
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
@@ -271,7 +271,7 @@ CREATE TABLE address (
 );
 ```
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -362,7 +362,7 @@ Ref address_member: address.member_id > member.id [delete: cascade]
 
 ```
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -461,7 +461,7 @@ exports.down = function(knex) {
 };
 ```
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -475,7 +475,7 @@ exports.down = function(knex) {
 * [SilverChat Database Schema 2: Member Networking | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
 * [SilverChat Database Schema 3: Member Messaging | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-3-messaging.md)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -501,7 +501,7 @@ exports.down = function(knex) {
 - [Resources: Database Design for Social Network - Code Dodle](https://www.codedodle.com/social-network-database.html)
 - [Design Database For Social Network System In MySQL | Tutorials24x7](https://www.tutorials24x7.com/mysql/guide-to-design-database-for-social-network-system-in-mysql)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -512,7 +512,7 @@ exports.down = function(knex) {
 - [Messenger Database Design Concept](https://github.com/yoosuf/Messenger)
 - [The Social Network System Database Design in MySQL to manage the Users, Friends, Follower, Messages, and Groups.](https://github.com/tutorials24x7/social-network-system-database-mysql)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -524,7 +524,7 @@ exports.down = function(knex) {
 - [Which database is best for creating a social networking application? - Quora](https://www.quora.com/Which-database-is-best-for-creating-a-social-networking-application)
 - [MySQL vs. MongoDB: The Pros and Cons When Building a Social Network](https://dzone.com/articles/mysql-vs-mongodb-the-pros-and-cons-when-building-a)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -534,7 +534,7 @@ exports.down = function(knex) {
 
 - [Top 10 Free Database Diagram Design Tools in 2025](https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ----
 
@@ -545,3 +545,8 @@ exports.down = function(knex) {
 
 
 ![FaceBook laid bare](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/facebook-reverse-engineered.jpg)
+
+
+
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+

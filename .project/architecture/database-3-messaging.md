@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" width="100%" alt="SilverChat - The 60+ Companionship network" /> 
+<img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-long-logo.png" id="top" width="100%" alt="SilverChat - The 60+ Companionship network" /> 
 
 *Alpha Release 3*
 
@@ -42,7 +42,7 @@ This document outlines the proposed database schema for handling member-to-membe
 
 [View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-3-Messaging-680c092a1ca52373f569e51f)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -54,7 +54,7 @@ This document outlines the proposed database schema for handling member-to-membe
 
 [View the live diagram on dbdiagram.io](https://dbdiagram.io/d/SilverChat-DB-0-Full-Picture-680c2e271ca52373f56b94e4)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -69,7 +69,7 @@ This document outlines the proposed database schema for handling member-to-membe
 | `id`        | `SERIAL`    | `PRIMARY KEY`     | Auto-incrementing unique identifier for type.    | 1, 2               |
 | `name`      | `VARCHAR(50)` | `UNIQUE NOT NULL` | Name of the conversation type (e.g., 'direct'). | 'direct', 'club' |
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -111,7 +111,7 @@ This document outlines the proposed database schema for handling member-to-membe
 | `created_at`      | `TIMESTAMPTZ` | `NOT NULL DEFAULT NOW()`                  | Timestamp when the message was sent.                               |
 |                   |               | `INDEX (conversation_id, created_at DESC)`| Crucial index for fetching messages efficiently.                   |
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" />
 
@@ -239,7 +239,7 @@ CREATE INDEX idx_message_conversation_created_at ON message (conversation_id, cr
 
 ```
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ----
 
@@ -351,8 +351,7 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 
 ```
 
-
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -366,7 +365,7 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 * [SilverChat Database Schema 2: Member Networking | GitHub](https://github.com/LouieMorais/SilverChat/blob/main/.project/architecture/database-2-networking.md)
 * **THIS DOCUMENT:** *SilverChat Database Schema 3: Member Messaging*
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 <img src="https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/silverchat-hr.png" width="100%" /> 
 
@@ -392,7 +391,7 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 - [Resources: Database Design for Social Network - Code Dodle](https://www.codedodle.com/social-network-database.html)
 - [Design Database For Social Network System In MySQL | Tutorials24x7](https://www.tutorials24x7.com/mysql/guide-to-design-database-for-social-network-system-in-mysql)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -403,7 +402,7 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 - [Messenger Database Design Concept](https://github.com/yoosuf/Messenger)
 - [The Social Network System Database Design in MySQL to manage the Users, Friends, Follower, Messages, and Groups.](https://github.com/tutorials24x7/social-network-system-database-mysql)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -415,7 +414,7 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 - [Which database is best for creating a social networking application? - Quora](https://www.quora.com/Which-database-is-best-for-creating-a-social-networking-application)
 - [MySQL vs. MongoDB: The Pros and Cons When Building a Social Network](https://dzone.com/articles/mysql-vs-mongodb-the-pros-and-cons-when-building-a)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -425,7 +424,7 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 
 - [Top 10 Free Database Diagram Design Tools in 2025](https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/)
 
-
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
 
 ---
 
@@ -436,3 +435,8 @@ Ref message_sender: message.sender_id > member.id // Refers to prerequisite memb
 
 
 ![FaceBook laid bare](https://raw.githubusercontent.com/LouieMorais/SilverChat/refs/heads/main/.project/architecture/img/facebook-reverse-engineered.jpg)
+
+
+
+<a href="#top" style="float: right; font-size: 0.8em;">**[BACK TO INDEX]**</a>
+
