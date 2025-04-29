@@ -8,7 +8,7 @@
     "dev": "nodemon server.js"
   },
   "author": "Louie Morais",
-  "license": "ISC",
+  "license": "Proprietary",
   "keywords": [],
   "description": "",
   "dependencies": {
