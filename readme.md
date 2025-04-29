@@ -112,3 +112,11 @@ SilverChat presents a compelling vision for a companionship-focused, secure, and
 
 
 <a href="#top" style="float: right; font-size: 0.8em; display: block; padding: 10px 0;  clear: both">**[BACK TO INDEX]**</a>
+
+
+
+---
+
+
+
+Content / Logos / Design © 2025 Luis (Louie) de la Orden Morais

@@ -9,7 +9,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.status(200).send('SilverChat API is running!');
+    res.status(200).send('SilverChat API is running via Nodemon and Knex!');
+    console.log(res, req)
 });
 
 app.listen(PORT, () => {
