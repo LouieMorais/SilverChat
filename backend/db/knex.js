@@ -1,6 +1,6 @@
 // db/knex.js
 const environment = process.env.NODE_ENV || 'development';
-const config = require('../knexfile.js')[environment];
+const config = require('../knexfile')[environment];
 const knex = require('knex')(config);
 
 knex.raw('SELECT 1+1 AS result').then(() =>{
